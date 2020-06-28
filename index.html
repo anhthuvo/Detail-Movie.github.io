@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>TIX</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+  </head>
+  <body>
+      <header class="header">
+        <nav class="navbar fixed-top">
+          <div class="navbar__container">
+            <a class="navbar-brand" href="#">
+              <img src="./images/web-logo.png" alt="logo">
+              <i class="fas fa-bars navbar__menuBtn"></i>
+            </a>
+
+            <div class="navbar-list-bg"  id="navbar-list-bg" style="display: none;"></div>
+            <div class="navbar-list">
+              <div class="navbar-list__center">
+                <a href="#" class="nav-link">Lịch Chiếu</a>
+                <a href="#"class="nav-link">Cụm rạp</a>
+                <a href="#"class="nav-link">Tin Tức</a>
+                <a href="#" class="nav-link">Ứng dụng</a>
+              </div>
+
+              <div class="navbar-list__signIn">
+                <i class="fas fa-user-circle fa-2x"></i>
+                <a href="#">Đăng Nhập</a>
+                <i class="fas fa-chevron-right navbar-list__signIn__closeBtn"></i>
+              </div>
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Hồ Chí Minh
+                  </button>
+
+
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <div class="dropdown-menu__container"  data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+                      <a class="dropdown-item active" href="#">Hồ Chí Minh</a>
+                    <a class="dropdown-item" href="#">Hà Nội</a>
+                    <a class="dropdown-item" href="#">Đà Nẵng</a>
+                    <a class="dropdown-item" href="#">Đà Nẵng</a>
+                    <a class="dropdown-item" href="#">Hải Phòng</a>
+                    <a class="dropdown-item" href="#">Biên Hòa</a>
+                    <a class="dropdown-item" href="#">Nha Trang</a>
+                    <a class="dropdown-item" href="#">Bình Dương</a>
+                    <a class="dropdown-item" href="#">Phan Thiết</a>
+                    <a class="dropdown-item" href="#">Hạ Long</a>
+                    <a class="dropdown-item" href="#">Cần Thơ</a>
+                    <a class="dropdown-item" href="#">Quy Nhơn</a>
+                    <a class="dropdown-item" href="#">Huế</a>
+                    <a class="dropdown-item" href="#">Long Xuyên</a>
+                    <a class="dropdown-item" href="#">Buôn Mê Thuộc</a>
+                    <a class="dropdown-item" href="#">Bắc Giang</a>
+                    <a class="dropdown-item" href="#">Bến Tre</a>
+                    <a class="dropdown-item" href="#">Việt Trì</a>
+                    <a class="dropdown-item" href="#">Ninh Bình</a>
+                    <a class="dropdown-item" href="#">Thái Bình</a>
+                    <a class="dropdown-item" href="#">Vinh</a>
+                    <a class="dropdown-item" href="#">Bảo Lộc</a>
+                    <a class="dropdown-item" href="#">Đà Lạt</a>
+                    <a class="dropdown-item" href="#">Trà Vinh</a>
+                    <a class="dropdown-item" href="#">Yên Bái</a>
+                    <a class="dropdown-item" href="#">Kiên Giang</a>
+                    <a class="dropdown-item" href="#">Vĩnh Long</a>
+                    <a class="dropdown-item" href="#">Cà Mau</a>
+                    <a class="dropdown-item" href="#">hậu giang</a>
+                    <a class="dropdown-item" href="#">tây ninh</a>
+                    <a class="dropdown-item" href="#">tuyên quang</a>
+                    <a class="dropdown-item" href="#">thanh hóa</a>
+                    <a class="dropdown-item" href="#">nam định</a>
+                    <a class="dropdown-item" href="#">hải dương</a>
+                    <a class="dropdown-item" href="#">gia lai</a>
+                    <a class="dropdown-item" href="#">hà tĩnh</a>
+                    <a class="dropdown-item" href="#">phú yên</a>
+                    <a class="dropdown-item" href="#">bạc liêu</a>
+                    <a class="dropdown-item" href="#">long an</a>
+                    <a class="dropdown-item" href="#">dồng hới</a>
+                    <a class="dropdown-item" href="#">hà nam</a>
+                    <a class="dropdown-item" href="#">bắc ninh</a>
+                    <a class="dropdown-item" href="#">quảng trị</a>
+                    <a class="dropdown-item" href="#">kon tum</a>
+                    <a class="dropdown-item" href="#">sóc trăng</a>
+                    <a class="dropdown-item" href="#">sơn la</a>
+                    <a class="dropdown-item" href="#">lạng sơn</a>
+                    <a class="dropdown-item" href="#">quảng ngãi</a>
+                    <a class="dropdown-item" href="#">mỹ tho</a>
+                    <a class="dropdown-item" href="#">đồng tháp</a>
+                    <a class="dropdown-item" href="#">hưng yên</a>
+                    </div>
+                  </div>
+
+              
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="body">
+        <img src="https://s3img.vcdn.vn/mobile/123phim/2020/02/sac-dep-doi-tra-false-beauty-c16-15814133327192_540x225.jpg" alt="carousel bg">
+        <section class="carousel">
+          <iframe class="carousel__trailer" width="560" height="315" src="https://www.youtube.com/embed/gknlpnjWJ-M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+          <div class="carousel__playBtn">
+            <i class="fa fa-play fa-2x" aria-hidden="true"></i>
+          </div>
+
+          <div class="container">
+            <div class="carousel__poster">
+              <img src="./images/poster.jpg" alt="poster">
+              <div class="carousel__poster__detail">
+                <p>14.02.2020</p>
+                <p>
+                  <span>C16</span>
+                  Sắc Đẹp Dối Trá - The Drama Queen
+                </p>
+                <p>91 phút - 0 IMDb - 2D/Digital</p>
+              </div>
+            </div>
+  
+            <div class="carousel__rating">
+
+              <div class="carousel__rating__score">7.3
+                <div class="carousel__rating__score-border-green"></div>
+                <div class="carousel__rating__score-border-green"></div>
+                <div class="carousel__rating__score-border-dark"></div>
+              </div>
+              
+              <div class="carousel__rating__starts">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <img src="./images/star1.2.png" alt="star1.2">
+              </div>
+              <p class="carousel__rating__ratingNum"> 270 người đánh giá</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="info-review container">
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link " id="nav-info-tab" data-toggle="tab" href="#nav-info" role="tab" aria-controls="nav-info" aria-selected="true">Thông tin</a>
+              <a class="nav-item nav-link active" id="nav-review-tab" data-toggle="tab" href="#nav-review" role="tab" aria-controls="nav-review" aria-selected="false">Đánh giá</a>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade tab-pane--1 " id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
+              
+              <div class="info-review__info">
+                <div class="info-review__info__detail">
+                  <ul>
+                    <li>Ngày công chiếu</li>
+                    <li>Đạo diễn</li>
+                    <li>Diễn viên</li>
+                    <li>Thể Loại</li>
+                    <li>Định dạng</li>
+                    <li>Quốc Gia SX</li>
+                  </ul>
+                  <ul>
+                    <li>14.02.2020</li>
+                    <li>Kay Nguyễn</li>
+                    <li>Hương Giang, Puka</li>
+                    <li>hài hước, hành động</li>
+                    <li>2D/Digital</li>
+                    <li>Việt Nam</li>
+                  </ul>
+                </div>
+
+                <div class="info-review__info__summary">
+                  <h3>Nội dung</h3>
+                  <p>Phim xoay quanh câu chuyện cuộc đời của Dương - một anh chàng cascadeur nhưng lại mang trong mình khát khao trở thành phụ nữ. Một ngày nọ, ước mơ ấy bỗng phải trở thành hiện thực ngay lập tức khi Dương tình cờ chứng kiến một vụ giết người và buộc phải thay đổi nhân dạng để lẩn trốn. Sau cuộc phẫu thuật chuyển giới, cha của Dương đột ngột lâm bệnh nặng, khiến cô phải bất đắc dĩ tham gia vào một cuộc thi Hoa hậu để có đủ tiền lo viện phí cho cha. Kể từ đó, rất nhiều tình huống bi hài và nguy hiểm không ngừng xảy đến với cô. Cùng đoán xem Dương sẽ phải trải qua những gian truân như thế nào?</p>
+                </div>
+
+                <div class="info-review__info__news">
+                  <p>Tin liên quan</p>
+                  <div class="info-review__info__news__item">
+                    <img src="./images/review.jpg" alt="review news">
+                    <p>
+                      [Review] Sắc Đẹp Dối Trá - Hương Giang kể chuyện đời mình qua phim 
+                    </p>
+                    <span class="info-review__item__like">
+                      <i class="far fa-thumbs-up"></i>                    
+                      <span>0</span>
+                    </span>
+
+                    <span class="info-review__item__comment">
+                      <i class="fas fa-comment-alt"></i>
+                    <span>0</span>
+                    </span>
+                  </div>
+                
+                </div>
+              </div>
+
+            </div>
+            <div class="tab-pane fade tab-pane--2 show active" id="nav-review" role="tabpanel" aria-labelledby="nav-review-tab">
+              
+              <div class="info-review__review">
+                <div class="info-review__review__comment d-flex">
+                  <i class="fas fa-user-circle"></i>
+                  <input type="text" placeholder="Bạn nghĩ gì về phim này">
+                  <span class="starts" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </span>
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content w-50 mx-auto">
+                        <div class="modal-header border-0 p-2">
+                          <h5 class="modal-title" id="exampleModalLabel"></h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+
+                        <div class="modal-body text-center p-0 ">
+                          Bạn cần đăng nhập
+                        </div>
+
+                        <div class="modal-footer border-0 p-3">
+                          <button type="button" class="btn-outline-secondary text-dark mx-auto py-1 px-2 ">Đăng nhập</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="info-review__comment__list w-100">
+
+                  <div class="info-review__comment__list__item">
+                    <div class="card mb-3">
+                      <div class="card-header bg-transparent d-flex border-0">
+                        <i class="fas fa-user-alt fa-2x"></i>
+                        <div class="user__info mr-auto">
+                          <p>Dương Lâm</p>
+                          <p>4 tháng trước</p>
+                        </div>
+                        <div class="score">
+                          <p>7</p>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <img src="./images/star1.2.png" alt="star1.2">
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <div class="card-text">
+                          Dù đã đọc nhiều bình luận, nhận xét không hay về bộ phim nhưng vẫn quyết định đi coi vì ủng hộ chị đẹp Hương Giang. Phim mang tính hài hước, giải trí cao nhờ sự duyên dáng của Phát La và Puka. Về phần diễn xuất củq chị Giang thì mình thấy chưa thật sự tốt nhưng ổn cho lần đầu đóng phim. Nội dung phim như đã xem các lời giới thiệu về phim trước đó, phim sẽ tập trung vào cuộc sống của những người sau khi chuyển giới thì mình cảm thấy khá thiếu vì nội dung chưa được đào sâu để giúp mọi người hiểu được, đồng cảm, không phân biệt đối với người chuyển giới. 
+                        </div>
+                        <p class="card-text__moreLess">...Xem thêm</p>
+
+                      </div>
+                      <div class="card-footer bg-transparent">
+                        <i class="far fa-thumbs-up"></i>
+                        <span>0</span>
+                        <span>Thích</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="info-review__comment__list__item">
+                    <div class="card mb-3">
+                      <div class="card-header bg-transparent d-flex border-0">
+                        <i class="fas fa-user-alt fa-2x"></i>
+                        <div class="user__info mr-auto">
+                          <p>Hachivas Le</p>
+                          <p>4 tháng trước</p>
+                        </div>
+                        <div class="score">
+                          <p>7</p>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <img src="./images/star1.2.png" alt="star1.2">
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <div class="card-text">
+                          Phim xem được nha mọi người. Nói về cuộc đời thế giới thứ ba
+                        </div>
+                        <p class="card-text__moreLess">...Xem thêm</p> 
+                      </div>
+                      <div class="card-footer bg-transparent">
+                        <i class="far fa-thumbs-up"></i>
+                        <span>0</span>
+                        <span>Thích</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="info-review__comment__list__item">
+                    <div class="card mb-3">
+                      <div class="card-header bg-transparent d-flex border-0">
+                        <i class="fas fa-user-alt fa-2x"></i>
+                        <div class="user__info mr-auto">
+                          <p>Vỹ Dạ</p>
+                          <p>4 tháng trước</p>
+                        </div>
+                        <div class="score">
+                          <p>8</p>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <div class="card-text">
+                          Mình thấy phim cũng khá đấy chứ! Chị Hương Giang công nhận đẹp và sức hút thật. Cốt truyện đời thường, đơn giản, được cái thích mấy miếng hài trong phim. Xem giải trí cũng ổn. 😄😄😄                        </div>
+                        <p class="card-text__moreLess">...Xem thêm</p> 
+                      </div>
+                      <div class="card-footer bg-transparent">
+                        <i class="far fa-thumbs-up"></i>
+                        <span>0</span>
+                        <span>Thích</span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <button type="button" class="btn btn-outline-secondary mx-auto d-block loadMoreReview">Xem Thêm</button>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__top row">
+            <div class="footer__top__tix">
+              <h3>TIX</h3>
+              <div class="row">
+                <ul>
+                  <li>FAQ</li>
+                  <li>Brand Guidelines</li>
+                </ul>
+                <ul>
+                  <li>Thỏa thuận sử dụng</li>
+                  <li>Chính sách bảo mật</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer__top__corporators">
+              <h3>ĐỐI TÁC</h3>
+              <div class="corporators">
+                <div class="corporator">
+                  <img src="./images/corp1.png" alt="corp1">
+                </div>
+                <div class="corporator">
+                  <img src="./images/corp2.png" alt="corp2">
+                </div>
+                <div class="corporator">
+                  <img src="./images/corp3.png" alt="corp3">
+                </div>
+                <div class="corporator">
+                  <img src="./images/corp4.png" alt="corp4">
+                </div>
+                <div class="corporator">
+                  <img src="./images/corp5.png" alt="corp5">
+                </div>
+                <div class="corporator">
+                  <img src="./images/corp6.png" alt="corp6">
+                </div>
+                <div class="corporator">
+                  <img src="./images/corp7.jpg" alt="corp7">
+                </div>
+                <div class="corporator">
+                  <img src="./images/corp8.png" alt="corp8">
+                </div>
+                <div class="corporator">
+                  <img src="./images/corp9.png" alt="corp9">
+                </div>
+                <div class="corporator">
+                  <img src="./images/corp10.png" alt="corp10">
+                </div>
+                <div class="corporator">
+                  <img src="./images/corp11.png" alt="corp11">
+                </div>
+                <div class="corporator">
+                  <img src="./images/corp12.png" alt="corp12">
+                </div>
+                <div class="corporator">
+                  <img src="./images/corp13.png" alt="corp13">
+                </div>
+                <div class="corporator">
+                  <img src="./images/corp14.png" alt="corp14">
+                </div>
+                <div class="corporator">
+                  <img src="./images/corp15.png" alt="corp15">
+                </div>
+                <div class="corporator">
+                  <img src="./images/corp16.png" alt="corp16">
+                </div>
+                <div class="corporator">
+                  <img src="./images/corp17.png" alt="corp17">
+                </div>
+                <div class="corporator">
+                  <img src="./images/corp18.png" alt="corp18">
+                </div>
+                <div class="corporator">
+                  <img src="./images/corp19.png" alt="corp19">
+                </div>
+                <div class="corporator">
+                  <img src="./images/corp20.png" alt="corp20">
+                </div>
+              </div>  
+            </div>
+              
+            <div class="footer__top__mobileApp">
+              <h3>MOBILE APP</h3>
+              <i class="fab fa-apple"></i>
+              <i class="fab fa-android"></i>
+            </div>
+
+            <div class="footer__top__social">
+              <h3>SOCIAL</h3>
+              <i class="fab fa-facebook"></i>
+              <img src="./images/zalo-icon.png" alt="zalo-icon">
+            </div>
+          </div>
+          
+          <div class="footer__bottom d-flex">
+            <div class="footer__bottom__zion-logo">
+              <img src="./images/zion-logo.jpg" alt="zion-logo">
+            </div>
+            <div class="footer__bottom__content flex-grow-1">
+              <p>TIX – SẢN PHẨM CỦA CÔNG TY CỔ PHẦN ZION</p>
+            <p>
+              Địa chỉ: Z06 Đường số 13, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh, Việt Nam.
+              <br> Giấy chứng nhận đăng ký kinh doanh số: 0101659783,
+              <br> đăng ký thay đổi lần thứ 30, ngày 22 tháng 01 năm 2020 do Sở kế hoạch và đầu tư Thành phố Hồ Chí Minh cấp.
+              <br> Số Điện Thoại (Hotline): 1900 545 436
+              <br> Email: <a href="mailto:support@tix.vn">support@tix.vn</a> 
+            </p>
+            </div>
+            <div class="footer__bottom__certificate">
+              <img src="./images/certificate.png" alt="certificate">
+            </div>
+          </div>
+      </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
