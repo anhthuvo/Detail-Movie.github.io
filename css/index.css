@@ -815,6 +815,12 @@ body {
   margin-right: 5px;
 }
 
+.info-review .tab-content .tab-pane--2 .info-review__review .info-review__review__comment .modal-header button:hover {
+  background-color: transparent;
+  color: #222;
+  outline: none;
+}
+
 .info-review .tab-content .tab-pane--2 .info-review__review .info-review__review__comment input {
   height: 36px;
   border: none;
@@ -823,6 +829,8 @@ body {
   font-weight: 400;
   text-decoration: none;
   margin-right: auto;
+  width: 370px;
+  outline: none;
 }
 
 .info-review .tab-content .tab-pane--2 .info-review__review .info-review__review__comment .starts i {

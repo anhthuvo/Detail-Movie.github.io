@@ -567,11 +567,21 @@ body {
             margin-right: 5px;
           }
 
+          .modal-header{
+            button:hover {
+              background-color: transparent;
+              color: $dark;
+              outline: none;
+            }
+          }
+
           input {
             height: 36px;
             border: none;
             @include Text($txtGrey1, $h6, $fwMedium);
             margin-right: auto;
+            width: 370px;
+            outline: none;
           }
 
           .starts {
@@ -582,10 +592,6 @@ body {
               opacity: 0.5;
             }
           }
-
-          // span {
-          //   i {}
-          // }
         }
 
         .info-review__comment__list {
