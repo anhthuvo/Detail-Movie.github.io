@@ -1,4 +1,4 @@
-export function movieSlider(section) {
+function movieSlider(section) {
   var showingMovieList = [
     movie1,
     movie2,

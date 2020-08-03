@@ -1,4 +1,4 @@
-export const autoSlideShow = function() {
+const autoSlideShow = function() {
     const slides = document.getElementById("phoneAppSlider");
     const phoneframe = document.getElementById("phoneframe");
     

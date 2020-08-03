@@ -1,8 +1,8 @@
-import { activeDropdownItem, navbarCollapse } from '../modules/header.js';
-import { bookingDate } from '../modules/index__booking.js';
-import { movieSlider } from '../modules/index__movieSlider.js';
-import { theaterMatrix } from '../modules/index__theater-matrix.js';
-import { autoSlideShow } from '../modules/index__autoSlider.js';
+// import { activeDropdownItem, navbarCollapse } from '../modules/header.js';
+// import { bookingDate } from '../modules/index__booking.js';
+// import { movieSlider } from '../modules/index__movieSlider.js';
+// import { theaterMatrix } from '../modules/index__theater-matrix.js';
+// import { autoSlideShow } from '../modules/index__autoSlider.js';
 
 $(document).ready(function () {
   // header section

@@ -1,5 +1,5 @@
 
-export function activeDropdownItem(obj) {
+function activeDropdownItem(obj) {
   let dropdownItem = obj + ' .dropdown-item';
   $(dropdownItem).click(function () {
     $(dropdownItem).removeClass("active");
@@ -14,7 +14,7 @@ export function activeDropdownItem(obj) {
   });
 }
 
-export function navbarCollapse() {
+function navbarCollapse() {
 //click menuBtn show and hide the navbar
   $(".header__navbar__menuBtn").click(function () {
     $(".header__navbar__navbar-collapse").css("left", "30%");

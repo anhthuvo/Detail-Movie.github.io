@@ -1,4 +1,4 @@
-export function bookingDate() {
+function bookingDate() {
     // schedule selection on dropdown bar
     let today = new Date();
     let followingDay = new Date();

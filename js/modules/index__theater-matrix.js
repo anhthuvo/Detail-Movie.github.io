@@ -1,4 +1,4 @@
-export const theaterMatrix = function() {
+const theaterMatrix = function() {
   const addClassActive = function (currentLink) {
     const className = currentLink.classList[0];
     const siblings = document.getElementsByClassName(className);
