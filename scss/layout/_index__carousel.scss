@@ -1,0 +1,76 @@
+.carousel-under-header {
+    margin-top: 60px;
+  
+    #carousel-inner:hover .playTrailer {
+      display: block !important;
+    }
+  
+    #carouselExampleCaptions {
+      position: relative;
+  
+      .carousel-indicators {
+        bottom: 50px;
+
+        @media (max-width: 991.98px) {
+          bottom: 0px;
+        }
+  
+        li {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          margin-right: 5px;
+          border: none;
+  
+          &.active {
+            background-color: $red;
+          }
+        }
+      }
+
+      .carousel-inner {
+        .carousel-item {
+          .carousel-caption {
+            padding: 0;
+            position: initial;
+  
+            .playTrailer {
+              display: none;
+              cursor: pointer;
+              @include btn($dark70, 50%, 2px solid $white, 0);
+              height: 80px;
+              width: 80px;
+              @include positionCenter();
+  
+              &:hover {
+                opacity: 0.5;
+              }
+  
+              i {
+                font-size: 30px;
+                color: $white;
+                line-height: 78px;
+                margin-left: 5px;
+              }
+            }
+          }
+        }
+      }
+  
+      .carousel-control-next,
+      .carousel-control-prev {
+        width: auto;
+        .carousel-control-next-icon,
+        .carousel-control-prev-icon {
+          background-image: none;
+          width: 70px;
+          height: auto;
+          padding: 0 20px;
+  
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,228 @@
+.theater-matrix {
+    padding: 130px 0 50px 0;
+    background-image: radial-gradient(800px circle at 50% 0%, $light, $white, $white);
+
+    &__container {
+        height: 700px;
+        padding: 0;
+        border: 0.5px solid $light;
+        border-radius: 5px;
+        background-color: $white;
+        position: relative;
+    
+        &__brand-col {
+            border-right: 0.5px solid $light;
+            width: 100px;
+            height: 100%;
+
+            &__link1 {
+                opacity: 0.5;
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                line-height: 100px;
+                text-align: center;
+                position: relative;
+
+                & > img {
+                    width: 50%;
+                }
+
+                &::after {
+                    content: '';
+                    width: calc( 100% - 40px );
+                    height: 1px;
+                    background-color: $light;
+                    @include position(absolute, 100%, 20px, 9);
+                } 
+                
+                img {
+                    width: 50%;
+                }
+                
+                &:hover, &.active {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &__location-col {
+            width: 300px;
+            height: 100%;
+            overflow-y: auto;
+            border-right: 0.5px solid $light;
+
+            &__target1 {
+                display: none;
+
+                &.active{
+                    display: block;
+                }
+
+                &__link2 {
+                    width: 100%;
+                    height: 100px;
+                    padding: 20px 20px;
+                    @include flex(row, flex-start, center);
+                    opacity: 0.5;
+                    position: relative;
+
+                    &.active, &:hover {
+                        opacity: 1;
+                    }
+
+                    &::after {
+                        content: '';
+                        width: calc( 100% - 40px );
+                        height: 1px;
+                        background-color: $light;
+                        @include position(absolute, 100%, 20px, 9);
+                    }
+
+                    img {
+                        height: 100%;
+                    }
+    
+                    &__detail {
+                        height: 100%;
+                        width: calc( 100% - 50px );
+                        padding-left: 10px;
+
+                        p {
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            @include Text($txtDark, $h6, $fwRegular);
+                            margin: 0;
+                            padding: 0;
+                        }
+    
+                        &__brandName {
+                            color: $txtRed;
+                        }
+    
+                        & &__address {
+                            @include Text($txtGrey1, $h8, $fwRegular);
+                        }
+    
+                        a {
+                            @include Text($txtRed, $h8, $fwRegular);
+                        }
+                    }
+                }
+            }
+        }
+
+        &__showtime-col {
+            width: calc( 100% - 100px - 300px );
+            overflow-y: auto;
+
+            &__target2 {
+                display: none;
+                
+                &.active {
+                    display: block;
+                }
+
+                &__movie {
+                    position: relative;
+                    padding: 20px 20px;
+
+                    &::after {
+                        content: '';
+                        width: calc( 100% - 40px );
+                        height: 1px;
+                        background-color: $light;
+                        @include position(absolute, 100%, 20px, 3);
+                    }
+    
+                    &__movieDetail {
+                        display: flex;
+    
+                        img {
+                            height: 60px;
+                        }
+    
+                        &__title {
+                            padding-left: 10px;
+    
+                            &__movieCertificate {
+                                @include Text($txtWhite, $h6, $fwRegular);
+                                @include btn($red, 3px, 0, 0 5px);
+                                display: inline-block;
+                                width: 30px;
+                                text-align: center;
+                            }
+    
+                            &__movieName {
+                                @include Text($txtDark, $h6, $fwRegular);
+                            }
+                            
+                            p {
+                                @include Text($txtGrey2, $h6, $fwMedium);
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+    
+                    &__note {
+                        @include Text($txtDark, $h5, $fwRegular);
+                        margin: 10px 0 5px;
+                        padding: 0;
+                    }
+    
+                    &__showTime {
+                        display: flex;
+                        flex-wrap: wrap;
+    
+                        &__item {
+                            display: block;
+                            width: 42%;
+                            margin-right: 10px;
+                            margin-bottom: 10px;
+                            max-width: 120px;
+                            text-align: center;
+                            @include btn($bright, 3px, 1px solid $light, 2px);
+                            @include Text($txtGrey1, $h5, $fwRegular);
+    
+                            &__start {
+                                @include Text($txtDarkGreen, $h3, $fwRegular);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767.98px) { 
+        &__container {
+            flex-direction: column;
+            height: auto;
+
+            &__brand-col {
+                width: 100%;
+                border-right: none;
+                border-bottom: 0.5px solid $light;
+
+                &__link1 {
+                    position: relative;
+
+                    &::after {
+                        height: calc( 100% - 40px );
+                        width: 1px;
+                        @include position(absolute, 20px, 100%, 9);
+                    }
+                }
+            }
+
+            
+            &__location-col, &__showtime-col {
+                width: 100%;
+                max-height: 600px;
+                border-right: none;
+                border-bottom: 0.5px solid $light;
+            }
+        }
+    }
+}

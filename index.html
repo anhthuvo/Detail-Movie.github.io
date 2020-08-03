@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>TIX</title>
@@ -8,304 +8,1923 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Font-awesome 5 -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <!-- Font-awesome 4 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- My style sheet css-->
     <link rel="stylesheet" href="./css/index.css">
   </head>
-  <body>
+  <body id='body'>
       <header class="header">
-        <nav class="navbar fixed-top">
-          <div class="navbar__container">
-            <a class="navbar-brand" href="#">
-              <img src="./images/web-logo.png" alt="logo">
-              <i class="fas fa-bars navbar__menuBtn"></i>
+        <nav class="header__navbar navbar fixed-top">
+            <a class="header__navbar__logo" href="#">
+              <img src="../images/header-footer/web-logo.png" alt="logo">
             </a>
+            
+            <i class="fas fa-bars header__navbar__menuBtn"></i>
 
-            <div class="navbar-list-bg"  id="navbar-list-bg" style="display: none;"></div>
-            <div class="navbar-list">
-              <div class="navbar-list__center">
-                <a href="#" class="nav-link">Lịch Chiếu</a>
-                <a href="#"class="nav-link">Cụm rạp</a>
-                <a href="#"class="nav-link">Tin Tức</a>
-                <a href="#" class="nav-link">Ứng dụng</a>
-              </div>
+            <div class="header__navbar__navbar-collapse-bg"></div>
 
-              <div class="navbar-list__signIn">
-                <i class="fas fa-user-circle fa-2x"></i>
-                <a href="#">Đăng Nhập</a>
-                <i class="fas fa-chevron-right navbar-list__signIn__closeBtn"></i>
-              </div>
-                <div class="dropdown">
-                  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-map-marker-alt"></i>
-                    Hồ Chí Minh
-                  </button>
-
-
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <div class="dropdown-menu__container"  data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
-                      <a class="dropdown-item active" href="#">Hồ Chí Minh</a>
-                    <a class="dropdown-item" href="#">Hà Nội</a>
-                    <a class="dropdown-item" href="#">Đà Nẵng</a>
-                    <a class="dropdown-item" href="#">Đà Nẵng</a>
-                    <a class="dropdown-item" href="#">Hải Phòng</a>
-                    <a class="dropdown-item" href="#">Biên Hòa</a>
-                    <a class="dropdown-item" href="#">Nha Trang</a>
-                    <a class="dropdown-item" href="#">Bình Dương</a>
-                    <a class="dropdown-item" href="#">Phan Thiết</a>
-                    <a class="dropdown-item" href="#">Hạ Long</a>
-                    <a class="dropdown-item" href="#">Cần Thơ</a>
-                    <a class="dropdown-item" href="#">Quy Nhơn</a>
-                    <a class="dropdown-item" href="#">Huế</a>
-                    <a class="dropdown-item" href="#">Long Xuyên</a>
-                    <a class="dropdown-item" href="#">Buôn Mê Thuộc</a>
-                    <a class="dropdown-item" href="#">Bắc Giang</a>
-                    <a class="dropdown-item" href="#">Bến Tre</a>
-                    <a class="dropdown-item" href="#">Việt Trì</a>
-                    <a class="dropdown-item" href="#">Ninh Bình</a>
-                    <a class="dropdown-item" href="#">Thái Bình</a>
-                    <a class="dropdown-item" href="#">Vinh</a>
-                    <a class="dropdown-item" href="#">Bảo Lộc</a>
-                    <a class="dropdown-item" href="#">Đà Lạt</a>
-                    <a class="dropdown-item" href="#">Trà Vinh</a>
-                    <a class="dropdown-item" href="#">Yên Bái</a>
-                    <a class="dropdown-item" href="#">Kiên Giang</a>
-                    <a class="dropdown-item" href="#">Vĩnh Long</a>
-                    <a class="dropdown-item" href="#">Cà Mau</a>
-                    <a class="dropdown-item" href="#">hậu giang</a>
-                    <a class="dropdown-item" href="#">tây ninh</a>
-                    <a class="dropdown-item" href="#">tuyên quang</a>
-                    <a class="dropdown-item" href="#">thanh hóa</a>
-                    <a class="dropdown-item" href="#">nam định</a>
-                    <a class="dropdown-item" href="#">hải dương</a>
-                    <a class="dropdown-item" href="#">gia lai</a>
-                    <a class="dropdown-item" href="#">hà tĩnh</a>
-                    <a class="dropdown-item" href="#">phú yên</a>
-                    <a class="dropdown-item" href="#">bạc liêu</a>
-                    <a class="dropdown-item" href="#">long an</a>
-                    <a class="dropdown-item" href="#">dồng hới</a>
-                    <a class="dropdown-item" href="#">hà nam</a>
-                    <a class="dropdown-item" href="#">bắc ninh</a>
-                    <a class="dropdown-item" href="#">quảng trị</a>
-                    <a class="dropdown-item" href="#">kon tum</a>
-                    <a class="dropdown-item" href="#">sóc trăng</a>
-                    <a class="dropdown-item" href="#">sơn la</a>
-                    <a class="dropdown-item" href="#">lạng sơn</a>
-                    <a class="dropdown-item" href="#">quảng ngãi</a>
-                    <a class="dropdown-item" href="#">mỹ tho</a>
-                    <a class="dropdown-item" href="#">đồng tháp</a>
-                    <a class="dropdown-item" href="#">hưng yên</a>
-                    </div>
-                  </div>
+            <div class="header__navbar__navbar-collapse">
+                <div class="header__navbar__navbar-collapse__signIn">
+                    <i class="fas fa-user-circle fa-2x"></i>
+                    <a href="#">Đăng Nhập</a>
+                    <i class="fas fa-chevron-right header__navbar__navbar-collapse__signIn__closeBtn"></i>
                 </div>
-              </div>
+
+                <div class="header__navbar__navbar-collapse__items"  id="navbar-list-bg">
+                    <a href="#" class="nav-link">Lịch Chiếu</a>
+                    <a href="#"class="nav-link">Cụm rạp</a>
+                    <a href="#"class="nav-link">Tin Tức</a>
+                    <a href="#" class="nav-link">Ứng dụng</a>
+                </div>
+
+                <div class="header__navbar__navbar-collapse__location dropdown">
+                    <button class="header__navbar__navbar-collapse__location__btn btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>Hồ Chí Minh</span>
+                    </button>
+                    <div class="header__navbar__navbar-collapse__location__menu dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <div class="header__navbar__navbar-collapse__location__menu__container"  data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+                        <p class="dropdown-item active" href="#">Hồ Chí Minh</p>
+                      <p class="dropdown-item" href="#">Hà Nội</p>
+                      <p class="dropdown-item" href="#">Đà Nẵng</p>
+                      <p class="dropdown-item" href="#">Hải Phòng</p>
+                      <p class="dropdown-item" href="#">Biên Hòa</p>
+                      <p class="dropdown-item" href="#">Nha Trang</p>
+                      <p class="dropdown-item" href="#">Bình Dương</p>
+                      <p class="dropdown-item" href="#">Phan Thiết</p>
+                      <p class="dropdown-item" href="#">Hạ Long</p>
+                      <p class="dropdown-item" href="#">Cần Thơ</p>
+                      <p class="dropdown-item" href="#">Quy Nhơn</p>
+                      <p class="dropdown-item" href="#">Huế</p>
+                      <p class="dropdown-item" href="#">Long Xuyên</p>
+                      <p class="dropdown-item" href="#">Buôn Mê Thuộc</p>
+                      <p class="dropdown-item" href="#">Bắc Giang</p>
+                      <p class="dropdown-item" href="#">Bến Tre</p>
+                      <p class="dropdown-item" href="#">Việt Trì</p>
+                      <p class="dropdown-item" href="#">Ninh Bình</p>
+                      <p class="dropdown-item" href="#">Thái Bình</p>
+                      <p class="dropdown-item" href="#">Vinh</p>
+                      <p class="dropdown-item" href="#">Bảo Lộc</p>
+                      <p class="dropdown-item" href="#">Đà Lạt</p>
+                      <p class="dropdown-item" href="#">Trà Vinh</p>
+                      <p class="dropdown-item" href="#">Yên Bái</p>
+                      <p class="dropdown-item" href="#">Kiên Giang</p>
+                      <p class="dropdown-item" href="#">Vĩnh Long</p>
+                      <p class="dropdown-item" href="#">Cà Mau</p>
+                      <p class="dropdown-item" href="#">hậu giang</p>
+                      <p class="dropdown-item" href="#">tây ninh</p>
+                      <p class="dropdown-item" href="#">tuyên quang</p>
+                      <p class="dropdown-item" href="#">thanh hóa</p>
+                      <p class="dropdown-item" href="#">nam định</p>
+                      <p class="dropdown-item" href="#">hải dương</p>
+                      <p class="dropdown-item" href="#">gia lai</p>
+                      <p class="dropdown-item" href="#">hà tĩnh</p>
+                      <p class="dropdown-item" href="#">phú yên</p>
+                      <p class="dropdown-item" href="#">bạc liêu</p>
+                      <p class="dropdown-item" href="#">long an</p>
+                      <p class="dropdown-item" href="#">dồng hới</p>
+                      <p class="dropdown-item" href="#">hà nam</p>
+                      <p class="dropdown-item" href="#">bắc ninh</p>
+                      <p class="dropdown-item" href="#">quảng trị</p>
+                      <p class="dropdown-item" href="#">kon tum</p>
+                      <p class="dropdown-item" href="#">sóc trăng</p>
+                      <p class="dropdown-item" href="#">sơn la</p>
+                      <p class="dropdown-item" href="#">lạng sơn</p>
+                      <p class="dropdown-item" href="#">quảng ngãi</p>
+                      <p class="dropdown-item" href="#">mỹ tho</p>
+                      <p class="dropdown-item" href="#">đồng tháp</p>
+                      <p class="dropdown-item" href="#">hưng yên</p>
+                      </div>
+                    </div>
+                </div>  
             </div>
-          </div>
         </nav>
       </header>
 
-      <div class="body">
-        <img src="https://s3img.vcdn.vn/mobile/123phim/2020/02/sac-dep-doi-tra-false-beauty-c16-15814133327192_540x225.jpg" alt="carousel bg">
-        <section class="carousel">
-          <iframe class="carousel__trailer" width="560" height="315" src="https://www.youtube.com/embed/gknlpnjWJ-M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-          </iframe>
-          <div class="carousel__playBtn">
-            <i class="fa fa-play fa-2x" aria-hidden="true"></i>
+      <section class="carousel-under-header">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+          </ol>
+          
+          <div class="carousel-inner" id="carousel-inner"> 
+            <div class="carousel-item active">
+              <img src="https://s3img.vcdn.vn/123phim/2020/06/soi-15927940748987.png" class="d-block w-100" alt="bgSoi">
+              <div class="carousel-caption d-none d-md-block">
+                <button class="playTrailer" type="button" data-toggle="modal" data-target="#exampleModal">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="https://s3img.vcdn.vn/123phim/2020/06/loi-nguyen-15931065378767.png" class="d-block w-100" alt="bgLoiNguyen">
+              <div class="carousel-caption d-none d-md-block">
+                <button class="playTrailer" type="button" data-toggle="modal" data-target="#exampleModal">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="https://s3img.vcdn.vn/123phim/2020/06/con-mua-tinh-dau-15931063648911.jpg" class="d-block w-100" alt="bgConMuaTinhDau">
+              <div class="carousel-caption d-none d-md-block">
+                <button class="playTrailer" type="button" data-toggle="modal" data-target="#exampleModal">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="https://s3img.vcdn.vn/123phim/2020/06/me-quy-15931064227646.png" class="d-block w-100" alt="bgConMuaTinhDau">
+              <div class="carousel-caption d-none d-md-block">
+                <button class="playTrailer" type="button" data-toggle="modal" data-target="#exampleModal">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            
+            <div class="carousel-item">
+              <img src="https://s3img.vcdn.vn/123phim/2020/06/nhim-soc-15931064792428.png" class="d-block w-100" alt="bgConMuaTinhDau">
+              <div class="carousel-caption d-none d-md-block">
+                <button class="playTrailer" type="button" data-toggle="modal" data-target="#exampleModal">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+            
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true">
+              <img src="./images/icon/arrow-left-gray.png" alt="arrow-left-gray">            
+            </span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true">
+              <img src="./images/icon/arrow-right-gray.png" alt="arrow-right-gray">
+            </span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="booking">
+        <div class="container">
+          <div class="row">
+
+            <div class="dropdown col-4">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span>Phim</span> 
+              </button>
+    
+              <div class="dropdown-menu movie" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu__container"  data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+                  <p class="dropdown-item active" href="#">Kẻ Xâm Nhập - Intruder (C18)</p>
+                  <p class="dropdown-item" href="#">Cơn Mưa Tình Đầu - Classic Again</p>
+                  <p class="dropdown-item" href="#">Mẹ Quỷ - The Wretched(C16)</p>
+                  <p class="dropdown-item" href="#">Trùng Quỷ Đại Dương - Sea Fever(C16)</p>
+                  <p class="dropdown-item" href="#">IZ*ONE: Ngước Nhìn Tôi - Eyes On Me: The Movie - (P)</p>
+                  <p class="dropdown-item" href="#">Ông Kẹ - Achoura - (C16)</p>
+                  <p class="dropdown-item" href="#">Đoạt Xác - Becoming - (C18)</p>
+                  <p class="dropdown-item" href="#">Nhím, Sóc và Viên Đá Thần Kỳ</p>
+                  <p class="dropdown-item" href="#">Lời Nguyền Shirai - Stare (C16)</p>
+                  <p class="dropdown-item" href="#">Thảm Họa Kép</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdown col-2">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span>Rạp</span> 
+              </button>
+    
+              <div class="dropdown-menu theater" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu__container"  data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+                  <p class="dropdown-item active" href="#"></p>
+                <p class="dropdown-item" href="#">BHD Star Discovery</p>
+                <p class="dropdown-item" href="#">Beta Cineplex Mỹ Đình</p>
+                <p class="dropdown-item" href="#">Beta Cineplex Thanh Xuân</p>
+                <p class="dropdown-item" href="#">Beta Cineplex Đan Phượng</p>
+                <p class="dropdown-item" href="#">CGV Aeon Hà Đông</p>
+                <p class="dropdown-item" href="#">CGV Aeon Long Biên</p>
+                <p class="dropdown-item" href="#">CGV Artemis Hà Nội</p>
+                <p class="dropdown-item" href="#">CGV Hà Nội Centerpoint</p>
+                <p class="dropdown-item" href="#">CGV Hồ Gươm Plaza</p>
+                <p class="dropdown-item" href="#">CGV Indochina Plaza Hà Nội</p>
+                <p class="dropdown-item" href="#">CGV Mac Plaza (Machinco)</p>
+                <p class="dropdown-item" href="#">CGV Tràng Tiền Plaza</p>
+                <p class="dropdown-item" href="#">CGV Vincom Long Biên</p>
+                <p class="dropdown-item" href="#">CGV Vincom Metropolis Liễu Giai</p>
+                <p class="dropdown-item" href="#">CGV Vincom Royal City</p>
+                <p class="dropdown-item" href="#">CGV Vincom Times City</p>
+                <p class="dropdown-item" href="#">CGV Vincom Trần Duy Hưng</p>
+                <p class="dropdown-item" href="#">Galaxy - Mipec Long Biên</p>
+                <p class="dropdown-item" href="#">Galaxy - Tràng Thi</p>
+                <p class="dropdown-item" href="#">Lotte Cinema Hà Đông</p>
+                <p class="dropdown-item" href="#">Lotte Cinema Landmark</p>
+                <p class="dropdown-item" href="#">Lotte Cinema Long Biên</p>
+                <p class="dropdown-item" href="#">Lotte Cinema Thăng Long</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdown col-2">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span>Ngày xem</span> 
+              </button>
+    
+              <div class="dropdown-menu schedule" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu__container"  data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+                  <div class="dropdown-item date" href="#">
+                    <p class="weekdays"></p>
+                  </div>
+                  <div class="dropdown-item date" href="#">
+                    <p class="weekdays"></p>
+                  </div>
+                  <div class="dropdown-item date" href="#">
+                    <p class="weekdays"></p>
+                  </div>
+                  <div class="dropdown-item date" href="#">
+                    <p class="weekdays"></p>
+                  </div>
+                  <div class="dropdown-item date" href="#">
+                    <p class="weekdays"></p>
+                  </div>
+                  <div class="dropdown-item date" href="#">
+                    <p class="weekdays"></p>
+                  </div>
+                  <div class="dropdown-item date" href="#">
+                    <p class="weekdays"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdown col-2">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span>Xuất chiếu</span> 
+              </button>
+    
+              <div class="dropdown-menu time" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu__container"  data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+                  <p class="dropdown-item active" href="#">7:50</p>
+                <p class="dropdown-item" href="#">11:45</p>
+                <p class="dropdown-item" href="#">17:30</p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="dropdown col-2">
+              <button class="bookingBtn btnDarkGrey">
+                MUA VÉ NGAY
+              </button>
+            </div>
+    
+          </div>    
+        </div>
+      </section>
+
+      <section class="movie-slider">
+        <nav>
+          <div class="movie-slider__nav nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="movie-slider__nav__nav-item nav-item nav-link active" id="nav-info-tab" data-toggle="tab" href="#nav-info" role="tab" aria-controls="nav-info" aria-selected="true">Đang chiếu</a>
+            <a class="movie-slider__nav__nav-item nav-item nav-link" id="nav-review-tab" data-toggle="tab" href="#nav-review" role="tab" aria-controls="nav-review" aria-selected="false">Sắp chiếu</a>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="movie-slider__tab-pane movie-slider__tab-pane--1
+                     tab-pane fade show active" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
+            <div class="movie-slider__tab-pane__control-prev" id= "movie-slider__tab-pane__control-prev">
+              <img src="./images/icon/arrow-left-gray.png" alt="arrow-left-gray">
+            </div>
+
+            <div class="movie-slider__tab-pane__control-next" id = "movie-slider__tab-pane__control-next">
+              <img src="./images/icon/arrow-right-gray.png" alt="arrow-right-gray">
+            </div>
+
+            <div class="movie-slider__tab-pane__container container">
+              <div class="movie-slider__tab-pane__container__list" id = "movieSliderList">
+                <!-- movie item -->
+                <div class="movie-slider__tab-pane__container__list__item col-lg-3 col-md-4 col-sm-6 col-6">
+                  <div class="movie-slider__tab-pane__container__list__item__poster">
+                    <div class="movie-slider__tab-pane__container__list__item__poster__overlay">
+                      <div class="movie-slider__tab-pane__container__list__item__poster__overlay__playTrailer playTrailer" type="button" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                      </div>
+                    </div>
+  
+                    <img class="movie-slider__tab-pane__container__list__item__poster__img" src="https://s3img.vcdn.vn/mobile/123phim/2020/06/ke-xam-nhap-intruder-c13-15916713941732_215x318.png" alt="">
+  
+                    <div class="movie-slider__tab-pane__container__list__item__poster__rating">
+                      <div class="movie-slider__tab-pane__container__list__item__poster__rating__score">7.3</div>
+                      
+                      <div class="movie-slider__tab-pane__container__list__item__poster__rating__stars">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <img src="./images/movies/star1.2.png" alt="star1.2">
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="movie-slider__tab-pane__container__list__item__footer">
+                    <div class="movie-slider__tab-pane__container__list__item__footer__detail">
+                      <span class="movie-slider__tab-pane__container__list__item__footer__detail__movieCertificate">C16</span>
+                      <span class="movie-slider__tab-pane__container__list__item__footer__detail__movieName">Kẻ xâm nhập - Intruder - C16</span> 
+                      <p class="movie-slider__tab-pane__container__list__item__footer__detail__movieLength">100 phút</p>
+                    </div>
+                    <button class="movie-slider__tab-pane__container__list__item__footer__bookingBtn btnRed">MUA VÉ</button>
+                  </div>
+                </div>
+              </div>  
+            </div>
           </div>
 
-          <div class="container">
-            <div class="carousel__poster">
-              <img src="./images/poster.jpg" alt="poster">
-              <div class="carousel__poster__detail">
-                <p>14.02.2020</p>
-                <p>
-                  <span>C16</span>
-                  Sắc Đẹp Dối Trá - The Drama Queen
-                </p>
-                <p>91 phút - 0 IMDb - 2D/Digital</p>
+          <div class="movie-slider__tab-pane movie-slider__tab-pane--2
+          movie-slider__tab-pane movie-slider__tab-pane tab-pane fade" id="nav-review" role="tabpanel" aria-labelledby="nav-review-tab">
+            <div class="movie-slider__tab-pane__control-prev" id= "movie-slider__tab-pane__control-prev">
+              <img src="./images/icon/arrow-left-gray.png" alt="arrow-left-gray">
+            </div>
+
+            <div class="movie-slider__tab-pane__control-next" id = "movie-slider__tab-pane__control-next">
+              <img src="./images/icon/arrow-right-gray.png" alt="arrow-right-gray">
+            </div>
+
+            <div class="movie-slider__tab-pane__container container">
+              <div class="movie-slider__tab-pane__container__list" id = "movieSliderList">
+                
+                <div class="movie-slider__tab-pane__container__list__item col-3">
+                  <div class="movie-slider__tab-pane__container__list__item__poster">
+                    <div class="movie-slider__tab-pane__container__list__item__poster__overlay">
+                      <div class="movie-slider__tab-pane__container__list__item__poster__overlay__playTrailer playTrailer" type="button" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                      </div>
+                    </div>
+
+                    <img class="movie-slider__tab-pane__container__list__item__poster__img" src="https://s3img.vcdn.vn/mobile/123phim/2020/06/ke-xam-nhap-intruder-c13-15916713941732_215x318.png" alt="">
+
+                    <div class="movie-slider__tab-pane__container__list__item__poster__rating">
+                      <div class="movie-slider__tab-pane__container__list__item__poster__rating__score">7.3</div>
+                      
+                      <div class="movie-slider__tab-pane__container__list__item__poster__rating__stars">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <img src="./images/movies/star1.2.png" alt="star1.2">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="movie-slider__tab-pane__container__list__item__footer">
+                    <div class="movie-slider__tab-pane__container__list__item__footer__detail">
+                      <span class="movie-slider__tab-pane__container__list__item__footer__detail__movieCertificate">C16</span>
+                      <span class="movie-slider__tab-pane__container__list__item__footer__detail__movieName">Kẻ xâm nhập - Intruder - C16</span> 
+                      <p class="movie-slider__tab-pane__container__list__item__footer__detail__movieLength">100 phút</p>
+                    </div>
+                    <button class="movie-slider__tab-pane__container__list__item__footer__bookingBtn btnRed">MUA VÉ</button>
+                  </div>
+                </div>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal- show trailer when click playBtn in carousel & movie-slider -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="modal__trailer">
+                <iframe id="modal__trailer__src" src="" allowfullscreen></iframe>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+      <section class="theater-matrix" >
+        <div class="theater-matrix__container d-flex container">
+            <!-- theater brands -->
+            <div class="theater-matrix__container__brand-col">
+              <!-- brand CGV-->
+              <div class="theater-matrix__container__brand-col__link1 active" href="#CGVLocations">
+                <img src="https://s3img.vcdn.vn/123phim/2018/09/ee621ee05dcd4565caead4f29421b41e.png" alt="CGVIcon">
+              </div>
+              <!-- brand BHD-->
+              <div class="theater-matrix__container__brand-col__link1" href="#BHDLocations">
+                <img src="https://s3img.vcdn.vn/123phim/2018/09/f32670fd0eb083c9c4c804f0f3a252ed.png" alt="BHDIcon">
+              </div>
+              <!-- brand Galaxy-->
+              <div class="theater-matrix__container__brand-col__link1" href="#galaxyLocations">
+                <img src="https://s3img.vcdn.vn/123phim/2018/09/e520781386bd5436e94d6e15e193a005.png" alt="GalaxyIcon">
+              </div>
+              <!-- brand Beta-->
+              <div class="theater-matrix__container__brand-col__link1" href="#betaLocations">
+                <img src="https://s3img.vcdn.vn/123phim/2018/09/51e769e2d81d0985870f929a5eb31deb.png" alt="BetaIcon">
+              </div>
+              <!-- brand Lotte-->
+              <div class="theater-matrix__container__brand-col__link1" href="#lotteLocations">
+                <img src="https://s3img.vcdn.vn/123phim/2018/09/404b8c4b80d77732e7426cdb7e24be20.png" alt="LotteIcon">
               </div>
             </div>
   
-            <div class="carousel__rating">
-
-              <div class="carousel__rating__score">7.3
-                <div class="carousel__rating__score-border-green"></div>
-                <div class="carousel__rating__score-border-green"></div>
-                <div class="carousel__rating__score-border-dark"></div>
-              </div>
-              
-              <div class="carousel__rating__starts">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <img src="./images/star1.2.png" alt="star1.2">
-              </div>
-              <p class="carousel__rating__ratingNum"> 270 người đánh giá</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="info-review container">
-          <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <a class="nav-item nav-link active" id="nav-info-tab" data-toggle="tab" href="#nav-info" role="tab" aria-controls="nav-info" aria-selected="true">Thông tin</a>
-              <a class="nav-item nav-link" id="nav-review-tab" data-toggle="tab" href="#nav-review" role="tab" aria-controls="nav-review" aria-selected="false">Đánh giá</a>
-            </div>
-          </nav>
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade tab-pane--1  show active" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
-              
-              <div class="info-review__info">
-                <div class="info-review__info__detail">
-                  <ul>
-                    <li>Ngày công chiếu</li>
-                    <li>Đạo diễn</li>
-                    <li>Diễn viên</li>
-                    <li>Thể Loại</li>
-                    <li>Định dạng</li>
-                    <li>Quốc Gia SX</li>
-                  </ul>
-                  <ul>
-                    <li>14.02.2020</li>
-                    <li>Kay Nguyễn</li>
-                    <li>Hương Giang, Puka</li>
-                    <li>hài hước, hành động</li>
-                    <li>2D/Digital</li>
-                    <li>Việt Nam</li>
-                  </ul>
-                </div>
-
-                <div class="info-review__info__summary">
-                  <h3>Nội dung</h3>
-                  <p>Phim xoay quanh câu chuyện cuộc đời của Dương - một anh chàng cascadeur nhưng lại mang trong mình khát khao trở thành phụ nữ. Một ngày nọ, ước mơ ấy bỗng phải trở thành hiện thực ngay lập tức khi Dương tình cờ chứng kiến một vụ giết người và buộc phải thay đổi nhân dạng để lẩn trốn. Sau cuộc phẫu thuật chuyển giới, cha của Dương đột ngột lâm bệnh nặng, khiến cô phải bất đắc dĩ tham gia vào một cuộc thi Hoa hậu để có đủ tiền lo viện phí cho cha. Kể từ đó, rất nhiều tình huống bi hài và nguy hiểm không ngừng xảy đến với cô. Cùng đoán xem Dương sẽ phải trải qua những gian truân như thế nào?</p>
-                </div>
-
-                <div class="info-review__info__news">
-                  <p>Tin liên quan</p>
-                  <div class="info-review__info__news__item">
-                    <img src="./images/review.jpg" alt="review news">
+            <div class="theater-matrix__container__location-col">
+              <!-- locations CGV -->
+              <div class="theater-matrix__container__location-col__target1 active" id="CGVLocations">
+                <!-- location item -->
+                <div class="theater-matrix__container__location-col__target1__link2 active" href="#CGVLocation1">
+                  <img src="https://s3img.vcdn.vn/123phim/2018/09/cgv-mipec-tower-15380177027112.jpg" alt="CGV-mipec tower">
+                  <div class="theater-matrix__container__location-col__target1__link2__detail">
                     <p>
-                      [Review] Sắc Đẹp Dối Trá - Hương Giang kể chuyện đời mình qua phim 
+                      <span class="theater-matrix__container__location-col__target1__link2__detail__brandName">CGV</span>
+                      <span class="theater-matrix__container__location-col__target1__link2__detail__theaterName">- Mipec Tower</span> 
                     </p>
-                    <span class="info-review__item__like">
-                      <i class="far fa-thumbs-up"></i>                    
-                      <span>0</span>
-                    </span>
-
-                    <span class="info-review__item__comment">
-                      <i class="fas fa-comment-alt"></i>
-                    <span>0</span>
-                    </span>
+                    <p class="theater-matrix__container__location-col__target1__link2__detail__address">Tầng 5, MIPEC Tower 229 Tây Sơn Quận Đống Đa, Hà Nội</p>
+                    <a href="#">[chi tiết]</a>
                   </div>
-                
+                </div>
+                <!-- location item -->
+                <div class="theater-matrix__container__location-col__target1__link2" href="#CGVLocation2">
+                  <img src="https://s3img.vcdn.vn/123phim/2018/09/cgv-mipec-tower-15380177027112.jpg" alt="CGV-mipec tower">
+                  <div class="theater-matrix__container__location-col__target1__link2__detail">
+                    <p>
+                      <span class="theater-matrix__container__location-col__target1__link2__detail__brandName">CGV</span>
+                      <span class="theater-matrix__container__location-col__target1__link2__detail__theaterName">- Indochina Plaza Hà Nội</span> 
+                    </p>
+                    <p class="theater-matrix__container__location-col__target1__link2__detail__address">
+                      Tầng 4, Indochina Plaza Hà Nội, 241 Xuân Thủy, Q. Cầu Giấy, Hà Nội
+                    </p>
+                    <a href="#">[chi tiết]</a>
+                  </div>
+                </div>
+                <!-- location item -->
+                <div class="theater-matrix__container__location-col__target1__link2" href="#CGVLocation3">
+                  <img src="https://s3img.vcdn.vn/123phim/2018/09/cgv-mipec-tower-15380177027112.jpg" alt="CGV-mipec tower">
+                  <div class="theater-matrix__container__location-col__target1__link2__detail">
+                    <p>
+                      <span class="theater-matrix__container__location-col__target1__link2__detail__brandName">CGV</span>
+                      <span class="theater-matrix__container__location-col__target1__link2__detail__theaterName">- Mipec Tower</span> 
+                    </p>
+                    <p class="theater-matrix__container__location-col__target1__link2__detail__address">Tầng 5, MIPEC Tower 229 Tây Sơn Quận Đống Đa, Hà Nội</p>
+                    <a href="#">[chi tiết]</a>
+                  </div>
                 </div>
               </div>
-
+              <!-- locations BHD -->
+              <div class="theater-matrix__container__location-col__target1" id="BHDLocations">
+                <!-- location item -->
+                <div class="theater-matrix__container__location-col__target1__link2" href="#BHDLocation1">
+                  <img src="https://s3img.vcdn.vn/123phim/2018/09/bhd-star-discovery-15379549737995.jpg" alt="BHD-pham-ngoc-thach">
+                  <div class="theater-matrix__container__location-col__target1__link2__detail">
+                    <p>
+                      <span class="theater-matrix__container__location-col__target1__link2__detail__brandName">BHD Star</span>
+                      <span class="theater-matrix__container__location-col__target1__link2__detail__theaterName">- Vincom Phạm Ngọc Thạch</span> 
+                    </p>
+                    <p class="theater-matrix__container__location-col__target1__link2__detail__address">T8, TTTM Discovery Complex 302 Cầu Giấy, Dịch Vọng, Cầu Giấy, Hà Nội</p>
+                    <a href="#">[chi tiết]</a>
+                  </div>
+                </div>
+                <!-- location item -->
+                <div class="theater-matrix__container__location-col__target1__link2" href="#BHDLocation2">
+                  <img src="https://s3img.vcdn.vn/123phim/2018/09/bhd-star-vincom-pham-ngoc-thach-15379555649049.jpg" alt="BHD-pham-ngoc-thach">
+                  <div class="theater-matrix__container__location-col__target1__link2__detail">
+                    <p>
+                      <span class="theater-matrix__container__location-col__target1__link2__detail__brandName">BHD Star</span>
+                      <span class="theater-matrix__container__location-col__target1__link2__detail__theaterName">- Vincom Phạm Ngọc Thạch</span> 
+                    </p>
+                    <p class="theater-matrix__container__location-col__target1__link2__detail__address">T8, TTTM Discovery Complex 302 Cầu Giấy, Dịch Vọng, Cầu Giấy, Hà Nội</p>
+                    <a href="#">[chi tiết]</a>
+                  </div>
+                </div>
+                <!-- location item -->
+                <div class="theater-matrix__container__location-col__target1__link2" href="#BHDLocation3" >
+                  <img src="https://s3img.vcdn.vn/123phim/2018/09/bhd-star-vincom-pham-ngoc-thach-15379555649049.jpg" alt="BHD-pham-ngoc-thach">
+                  <div class="theater-matrix__container__location-col__target1__link2__detail">
+                    <p>
+                      <span class="theater-matrix__container__location-col__target1__link2__detail__brandName">BHD Star</span>
+                      <span class="theater-matrix__container__location-col__target1__link2__detail__theaterName">- Vincom Phạm Ngọc Thạch</span> 
+                    </p>
+                    <p class="theater-matrix__container__location-col__target1__link2__detail__address">T8, TTTM Discovery Complex 302 Cầu Giấy, Dịch Vọng, Cầu Giấy, Hà Nội</p>
+                    <a href="#">[chi tiết]</a>
+                  </div>
+                </div>
+              </div>
+              <!-- locations Galaxy -->
+              <div class="theater-matrix__container__location-col__target1" id="galaxyLocations">
+                <!-- location item -->
+                <div class="theater-matrix__container__location-col__target1__link2" href="#GLXLocation1">
+                  <img src="https://s3img.vcdn.vn/123phim/2019/05/galaxy-trang-thi-15572117610492.gif" alt="GLX-Trang Thi">
+                  <div class="theater-matrix__container__location-col__target1__link2__detail">
+                    <p>
+                      <span class="theater-matrix__container__location-col__target1__link2__detail__brandName">GLX</span>
+                      <span class="theater-matrix__container__location-col__target1__link2__detail__theaterName">- Tràng Thi</span> 
+                    </p>
+                    <p class="theater-matrix__container__location-col__target1__link2__detail__address">10b Tràng Thi, Hàng Trống, Hoàn Kiếm, Hà Nội</p>
+                    <a href="#">[chi tiết]</a>
+                  </div>
+                </div>
+                <!-- location item -->
+                <div class="theater-matrix__container__location-col__target1__link2" href="#GLXLocation2">
+                  <img src="https://s3img.vcdn.vn/123phim/2018/09/galaxy-mipec-long-bien-15381075021876.jpg" alt="GLX-long Bien">
+                  <div class="theater-matrix__container__location-col__target1__link2__detail">
+                    <p>
+                      <span class="theater-matrix__container__location-col__target1__link2__detail__brandName">GLX</span>
+                      <span class="theater-matrix__container__location-col__target1__link2__detail__theaterName">- Mipec Long Biên</span> 
+                    </p>
+                    <p class="theater-matrix__container__location-col__target1__link2__detail__address">T6-Mipec Riverside, số 2 Long Biên 2, HN</p>
+                    <a href="#">[chi tiết]</a>
+                  </div>
+                </div>
+              </div>
+              <!-- locations Beta -->
+              <div class="theater-matrix__container__location-col__target1" id="betaLocations">
+                <!-- location item -->
+                <div class="theater-matrix__container__location-col__target1__link2" href="#betaLocation1">
+                  <img src="https://s3img.vcdn.vn/123phim/2018/10/beta-cineplex-dan-phuong-15383837663910.jpg" alt="Beta-Đan phượng">
+                  <div class="theater-matrix__container__location-col__target1__link2__detail">
+                    <p>
+                      <span class="theater-matrix__container__location-col__target1__link2__detail__brandName">Beta-cineplex</span>
+                      <span class="theater-matrix__container__location-col__target1__link2__detail__theaterName">- Đan Phượng</span> 
+                    </p>
+                    <p class="theater-matrix__container__location-col__target1__link2__detail__address">XPHomes, Tân Tây Đô, Tân Lập, Đan Phượng, Hà Nội</p>
+                    <a href="#">[chi tiết]</a>
+                  </div>
+                </div>
+                <!-- location item -->
+                <div class="theater-matrix__container__location-col__target1__link2" href="#betaLocation2">
+                  <img src="https://s3img.vcdn.vn/123phim/2018/09/beta-cineplex-my-dinh-15379643645649.jpg" alt="GLX-long Bien">
+                  <div class="theater-matrix__container__location-col__target1__link2__detail">
+                    <p>
+                      <span class="theater-matrix__container__location-col__target1__link2__detail__brandName">Beta-cineplex</span>
+                      <span class="theater-matrix__container__location-col__target1__link2__detail__theaterName">- Mipec Long Biên</span> 
+                    </p>
+                    <p class="theater-matrix__container__location-col__target1__link2__detail__address">T6-Mipec Riverside, số 2 Long Biên 2, HN</p>
+                    <a href="#">[chi tiết]</a>
+                  </div>
+                </div>
+              </div>
+              <!-- locations Lotte -->
+              <div class="theater-matrix__container__location-col__target1" id="lotteLocations">
+                <!-- location item -->
+                <div class="theater-matrix__container__location-col__target1__link2" href="#lotteLocation1">
+                  <img src="https://s3img.vcdn.vn/123phim/2018/04/lotte-cinema-ha-dong-15234406380466.jpg" alt="lotte-Đan phượng">
+                  <div class="theater-matrix__container__location-col__target1__link2__detail">
+                    <p>
+                      <span class="theater-matrix__container__location-col__target1__link2__detail__brandName">Lotte</span>
+                      <span class="theater-matrix__container__location-col__target1__link2__detail__theaterName">- Đan Phượng</span> 
+                    </p>
+                    <p class="theater-matrix__container__location-col__target1__link2__detail__address">XPHomes, Tân Tây Đô, Tân Lập, Đan Phượng, Hà Nội</p>
+                    <a href="#">[chi tiết]</a>
+                  </div>
+                </div>
+                <!-- location item -->
+                <div class="theater-matrix__container__location-col__target1__link2" href="#lotteLocation2">
+                  <img src="https://s3img.vcdn.vn/123phim/2018/10/lotte-cinema-long-bien-15383882183175.jpg" alt="lotte-long Bien">
+                  <div class="theater-matrix__container__location-col__target1__link2__detail">
+                    <p>
+                      <span class="theater-matrix__container__location-col__target1__link2__detail__brandName">Lotte</span>
+                      <span class="theater-matrix__container__location-col__target1__link2__detail__theaterName">- Mipec Long Biên</span> 
+                    </p>
+                    <p class="theater-matrix__container__location-col__target1__link2__detail__address">T6-Mipec Riverside, số 2 Long Biên 2, HN</p>
+                    <a href="#">[chi tiết]</a>
+                  </div>
+                </div>
+                <!-- location item -->
+                <div class="theater-matrix__container__location-col__target1__link2" href="#lotteLocation3">
+                  <img src="https://s3img.vcdn.vn/123phim/2018/10/lotte-cinema-long-bien-15383882183175.jpg" alt="lotte-long Bien">
+                  <div class="theater-matrix__container__location-col__target1__link2__detail">
+                    <p>
+                      <span class="theater-matrix__container__location-col__target1__link2__detail__brandName">Lotte</span>
+                      <span class="theater-matrix__container__location-col__target1__link2__detail__theaterName">- Landmark</span> 
+                    </p>
+                    <p class="theater-matrix__container__location-col__target1__link2__detail__address">E6 Phạm Hùng, Cầu Giấy, HN</p>
+                    <a href="#">[chi tiết]</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="tab-pane fade tab-pane--2" id="nav-review" role="tabpanel" aria-labelledby="nav-review-tab">
-              
-              <div class="info-review__review">
-                <div class="info-review__review__comment d-flex">
-                  <i class="fas fa-user-circle"></i>
-                  <input type="text" placeholder="Bạn nghĩ gì về phim này">
-                  <span class="starts" data-toggle="modal" data-target="#exampleModal">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                  </span>
-                  <!-- Modal -->
-                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content w-50 mx-auto">
-                        <div class="modal-header border-0 p-2">
-                          <h5 class="modal-title" id="exampleModalLabel"></h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-
-                        <div class="modal-body text-center p-0 ">
-                          Bạn cần đăng nhập
-                        </div>
-
-                        <div class="modal-footer border-0 p-3">
-                          <button type="button" class="btn-outline-secondary text-dark mx-auto py-1 px-2 ">Đăng nhập</button>
-                        </div>
-                      </div>
+  
+            <div class="theater-matrix__container__showtime-col">
+              <!-- CGV -->
+              <div class="theater-matrix__container__showtime-col__target2 active" id="CGVLocation1">
+                <div class="theater-matrix__container__showtime-col__target2__movie">
+                  <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail">
+                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/scoob-15940967705047_60x60.png" alt="movie poster">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieCertificate">P</span>
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieName">Cuộc Phiêu Lưu Của Scooby-doo! - Scoob! -</span>
+                      <p>
+                        <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieLength">100 phút</span> 
+                        - 
+                        <span>TIX 7.7</span>
+                        - 
+                        <span>IMDb 5.7</span>
+                      </p>
+                    </div>
+                  </div>
+                  <p class="theater-matrix__container__showtime-col__target2__movie__note">2D Lồng Tiếng</p>
+                  <div class="theater-matrix__container__showtime-col__target2__movie__showTime">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
                     </div>
                   </div>
                 </div>
-                <div class="info-review__comment__list w-100">
-
-                  <div class="info-review__comment__list__item">
-                    <div class="card mb-3">
-                      <div class="card-header bg-transparent d-flex border-0">
-                        <i class="fas fa-user-alt fa-2x"></i>
-                        <div class="user__info mr-auto">
-                          <p class="userName" >Dương Lâm</p>
-                          <p class="commentTime" >4 tháng trước</p>
-                        </div>
-                        <div class="score">
-                          <p class="scoreNum">7</p>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <img src="./images/star1.2.png" alt="star1.2">
-                        </div>
-                      </div>
-                      <div class="card-body">
-                        <div class="card-text">
-                          Dù đã đọc nhiều bình luận, nhận xét không hay về bộ phim nhưng vẫn quyết định đi coi vì ủng hộ chị đẹp Hương Giang. Phim mang tính hài hước, giải trí cao nhờ sự duyên dáng của Phát La và Puka. Về phần diễn xuất củq chị Giang thì mình thấy chưa thật sự tốt nhưng ổn cho lần đầu đóng phim. Nội dung phim như đã xem các lời giới thiệu về phim trước đó, phim sẽ tập trung vào cuộc sống của những người sau khi chuyển giới thì mình cảm thấy khá thiếu vì nội dung chưa được đào sâu để giúp mọi người hiểu được, đồng cảm, không phân biệt đối với người chuyển giới. 
-                        </div>
-                        <p class="card-text__moreLess">...Xem thêm</p>
-                      </div>
-                      <div class="card-footer bg-transparent">
-                        <i class="far fa-thumbs-up likeBtn"></i>
-                        <span class="likeNum">0</span>
-                        <span>Thích</span>
-                      </div>
+                <div class="theater-matrix__container__showtime-col__target2__movie">
+                  <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail">
+                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/ban-dao-peninsula-15935709741597_60x60.png" alt="movie poster">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieCertificate">P</span>
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieName">Bán Đảo - Peninsula -</span>
+                      <p>
+                        <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieLength">100 phút</span> 
+                        - 
+                        <span>TIX 7.7</span>
+                        - 
+                        <span>IMDb 5.7</span>
+                      </p>
                     </div>
                   </div>
-
-                  <!-- <div class="info-review__comment__list__item">
-                    abc
-                    <div class="card mb-3">
-                      <div class="card-header bg-transparent d-flex border-0">
-                        <i class="fas fa-user-alt fa-2x"></i>
-                        <div class="user__info mr-auto">
-                          <p class="userName">Vỹ Dạ</p>
-                          <p>4 tháng trước</p>
-                        </div>
-                        <div class="score">
-                          <p>8</p>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                        </div>
-                      </div>
-                      <div class="card-body">
-                        <div class="card-text">
-                          Mình thấy phim cũng khá đấy chứ! Chị Hương Giang công nhận đẹp và sức hút thật. Cốt truyện đời thường, đơn giản, được cái thích mấy miếng hài trong phim. Xem giải trí cũng ổn. 😄😄😄                        </div>
-                        <p class="card-text__moreLess">...Xem thêm</p> 
-                      </div>
-                      <div class="card-footer bg-transparent">
-                        <i class="far fa-thumbs-up"></i>
-                        <span>0</span>
-                        <span>Thích</span>
-                      </div>
+                  <p class="theater-matrix__container__showtime-col__target2__movie__note">2D Lồng Tiếng</p>
+                  <div class="theater-matrix__container__showtime-col__target2__movie__showTime">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
                     </div>
-                  </div> -->
-
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                  </div>
                 </div>
-                <button type="button" class="btn btn-outline-secondary mx-auto d-block loadMoreReview">Xem Thêm</button>
+                <div class="theater-matrix__container__showtime-col__target2__movie">
+                  <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail">
+                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/ban-dao-peninsula-15935709741597_60x60.png" alt="movie poster">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieCertificate">P</span>
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieName">Bán Đảo - Peninsula -</span>
+                      <p>
+                        <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieLength">100 phút</span> 
+                        - 
+                        <span>TIX 7.7</span>
+                        - 
+                        <span>IMDb 5.7</span>
+                      </p>
+                    </div>
+                  </div>
+                  <p class="theater-matrix__container__showtime-col__target2__movie__note">2D Lồng Tiếng</p>
+                  <div class="theater-matrix__container__showtime-col__target2__movie__showTime">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="theater-matrix__container__showtime-col__target2__movie">
+                  <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail">
+                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/ban-dao-peninsula-15935709741597_60x60.png" alt="movie poster">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieCertificate">P</span>
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieName">Bán Đảo - Peninsula -</span>
+                      <p>
+                        <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieLength">100 phút</span> 
+                        - 
+                        <span>TIX 7.7</span>
+                        - 
+                        <span>IMDb 5.7</span>
+                      </p>
+                    </div>
+                  </div>
+                  <p class="theater-matrix__container__showtime-col__target2__movie__note">2D Lồng Tiếng</p>
+                  <div class="theater-matrix__container__showtime-col__target2__movie__showTime">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <div class="theater-matrix__container__showtime-col__target2" id="CGVLocation2">
+                <div class="theater-matrix__container__showtime-col__target2__movie">
+                  <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail">
+                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/ban-dao-peninsula-15935709741597_60x60.png" alt="movie poster">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieCertificate">P</span>
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieName">Bán Đảo - Peninsula -</span>
+                      <p>
+                        <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieLength">100 phút</span> 
+                        - 
+                        <span>TIX 7.7</span>
+                        - 
+                        <span>IMDb 5.7</span>
+                      </p>
+                    </div>
+                  </div>
+                  <p class="theater-matrix__container__showtime-col__target2__movie__note">2D Lồng Tiếng</p>
+                  <div class="theater-matrix__container__showtime-col__target2__movie__showTime">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="theater-matrix__container__showtime-col__target2__movie">
+                  <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail">
+                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/scoob-15940967705047_60x60.png" alt="movie poster">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieCertificate">P</span>
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieName">Cuộc Phiêu Lưu Của Scooby-doo! - Scoob! -</span>
+                      <p>
+                        <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieLength">100 phút</span> 
+                        - 
+                        <span>TIX 7.7</span>
+                        - 
+                        <span>IMDb 5.7</span>
+                      </p>
+                    </div>
+                  </div>
+                  <p class="theater-matrix__container__showtime-col__target2__movie__note">2D Lồng Tiếng</p>
+                  <div class="theater-matrix__container__showtime-col__target2__movie__showTime">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="theater-matrix__container__showtime-col__target2" id="CGVLocation3">
+                <div class="theater-matrix__container__showtime-col__target2__movie">
+                  <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail">
+                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/scoob-15940967705047_60x60.png" alt="movie poster">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieCertificate">P</span>
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieName">Cuộc Phiêu Lưu Của Scooby-doo! - Scoob! -</span>
+                      <p>
+                        <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieLength">100 phút</span> 
+                        - 
+                        <span>TIX 7.7</span>
+                        - 
+                        <span>IMDb 5.7</span>
+                      </p>
+                    </div>
+                  </div>
+                  <p class="theater-matrix__container__showtime-col__target2__movie__note">2D Lồng Tiếng</p>
+                  <div class="theater-matrix__container__showtime-col__target2__movie__showTime">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="theater-matrix__container__showtime-col__target2__movie">
+                  <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail">
+                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/ban-dao-peninsula-15935709741597_60x60.png" alt="movie poster">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieCertificate">P</span>
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieName">Bán Đảo - Peninsula -</span>
+                      <p>
+                        <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieLength">100 phút</span> 
+                        - 
+                        <span>TIX 7.7</span>
+                        - 
+                        <span>IMDb 5.7</span>
+                      </p>
+                    </div>
+                  </div>
+                  <p class="theater-matrix__container__showtime-col__target2__movie__note">2D Lồng Tiếng</p>
+                  <div class="theater-matrix__container__showtime-col__target2__movie__showTime">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- BHD -->
+              <div class="theater-matrix__container__showtime-col__target2" id="BHDLocation1">
+                  <div class="theater-matrix__container__showtime-col__target2__movie">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail">
+                      <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/chuyen-du-lich-chet-choc-outback-c16-15941077973165_60x60.png" alt="movie poster">
+                      <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title">
+                        <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieCertificate">P</span>
+                        <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieName">Chuyến Du Lịch Chết Chóc - Death -</span>
+                        <p>
+                          <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieLength">100 phút</span> 
+                          - 
+                          <span>TIX 7.7</span>
+                          - 
+                          <span>IMDb 5.7</span>
+                        </p>
+                      </div>
+                    </div>
+                    <p class="theater-matrix__container__showtime-col__target2__movie__note">2D Lồng Tiếng</p>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime">
+                      <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                        <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                        <span>~ 19:10</span>
+                      </div>
+                      <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                        <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                        <span>~ 19:10</span>
+                      </div>
+                      <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                        <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                        <span>~ 19:10</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="theater-matrix__container__showtime-col__target2__movie">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail">
+                      <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/cau-be-nguoi-go-pinocchio-pinocchio-p-15941070116735_60x60.png" alt="movie poster">
+                      <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title">
+                        <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieCertificate">P</span>
+                        <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieName">Cậu Bé Người Gỗ - Pinocchio -</span>
+                        <p>
+                          <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieLength">100 phút</span> 
+                          - 
+                          <span>TIX 7.7</span>
+                          - 
+                          <span>IMDb 5.7</span>
+                        </p>
+                      </div>
+                    </div>
+                    <p class="theater-matrix__container__showtime-col__target2__movie__note">2D Lồng Tiếng</p>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime">
+                      <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                        <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                        <span>~ 19:10</span>
+                      </div>
+                      <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                        <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                        <span>~ 19:10</span>
+                      </div>
+                      <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                        <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                        <span>~ 19:10</span>
+                      </div>
+                      <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                        <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                        <span>~ 19:10</span>
+                      </div>
+                      <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                        <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                        <span>~ 19:10</span>
+                      </div>
+                      <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                        <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                        <span>~ 19:10</span>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="theater-matrix__container__showtime-col__target2" id="BHDLocation2">
+                <div class="theater-matrix__container__showtime-col__target2__movie">
+                  <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail">
+                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/cau-be-nguoi-go-pinocchio-pinocchio-p-15941070116735_60x60.png" alt="movie poster">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieCertificate">P</span>
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieName">Cậu Bé Người Gỗ - Pinocchio -</span>
+                      <p>
+                        <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieLength">100 phút</span> 
+                        - 
+                        <span>TIX 7.7</span>
+                        - 
+                        <span>IMDb 5.7</span>
+                      </p>
+                    </div>
+                  </div>
+                  <p class="theater-matrix__container__showtime-col__target2__movie__note">2D Lồng Tiếng</p>
+                  <div class="theater-matrix__container__showtime-col__target2__movie__showTime">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="theater-matrix__container__showtime-col__target2__movie">
+                  <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail">
+                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/chuyen-du-lich-chet-choc-outback-c16-15941077973165_60x60.png" alt="movie poster">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieCertificate">P</span>
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieName">Chuyến Du Lịch Chết Chóc - Death -</span>
+                      <p>
+                        <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieLength">100 phút</span> 
+                        - 
+                        <span>TIX 7.7</span>
+                        - 
+                        <span>IMDb 5.7</span>
+                      </p>
+                    </div>
+                  </div>
+                  <p class="theater-matrix__container__showtime-col__target2__movie__note">2D Lồng Tiếng</p>
+                  <div class="theater-matrix__container__showtime-col__target2__movie__showTime">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="theater-matrix__container__showtime-col__target2" id="BHDLocation3">
+                <div class="theater-matrix__container__showtime-col__target2__movie">
+                  <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail">
+                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/chuyen-du-lich-chet-choc-outback-c16-15941077973165_60x60.png" alt="movie poster">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieCertificate">P</span>
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieName">Chuyến Du Lịch Chết Chóc - Death -</span>
+                      <p>
+                        <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieLength">100 phút</span> 
+                        - 
+                        <span>TIX 7.7</span>
+                        - 
+                        <span>IMDb 5.7</span>
+                      </p>
+                    </div>
+                  </div>
+                  <p class="theater-matrix__container__showtime-col__target2__movie__note">2D Lồng Tiếng</p>
+                  <div class="theater-matrix__container__showtime-col__target2__movie__showTime">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="theater-matrix__container__showtime-col__target2__movie">
+                  <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail">
+                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/cau-be-nguoi-go-pinocchio-pinocchio-p-15941070116735_60x60.png" alt="movie poster">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieCertificate">P</span>
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieName">Cậu Bé Người Gỗ - Pinocchio -</span>
+                      <p>
+                        <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieLength">100 phút</span> 
+                        - 
+                        <span>TIX 7.7</span>
+                        - 
+                        <span>IMDb 5.7</span>
+                      </p>
+                    </div>
+                  </div>
+                  <p class="theater-matrix__container__showtime-col__target2__movie__note">2D Lồng Tiếng</p>
+                  <div class="theater-matrix__container__showtime-col__target2__movie__showTime">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Galaxy -->
+              <div class="theater-matrix__container__showtime-col__target2" id="GLXLocation1">
+                <div class="theater-matrix__container__showtime-col__target2__movie">
+                  <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail">
+                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/dinh-thu-oan-khuat-ghost-of-war-c18-15947018395223_60x60.png" alt="movie poster">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieCertificate">P</span>
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieName">Chuyến Du Lịch Chết Chóc - Death -</span>
+                      <p>
+                        <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieLength">100 phút</span> 
+                        - 
+                        <span>TIX 7.7</span>
+                        - 
+                        <span>IMDb 5.7</span>
+                      </p>
+                    </div>
+                  </div>
+                  <p class="theater-matrix__container__showtime-col__target2__movie__note">2D Lồng Tiếng</p>
+                  <div class="theater-matrix__container__showtime-col__target2__movie__showTime">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="theater-matrix__container__showtime-col__target2__movie">
+                  <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail">
+                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/cau-be-nguoi-go-pinocchio-pinocchio-p-15941070116735_60x60.png" alt="movie poster">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieCertificate">P</span>
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieName">Cậu Bé Người Gỗ - Pinocchio -</span>
+                      <p>
+                        <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieLength">100 phút</span> 
+                        - 
+                        <span>TIX 7.7</span>
+                        - 
+                        <span>IMDb 5.7</span>
+                      </p>
+                    </div>
+                  </div>
+                  <p class="theater-matrix__container__showtime-col__target2__movie__note">2D Lồng Tiếng</p>
+                  <div class="theater-matrix__container__showtime-col__target2__movie__showTime">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="theater-matrix__container__showtime-col__target2" id="GLXLocation2">
+                <div class="theater-matrix__container__showtime-col__target2__movie">
+                  <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail">
+                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/chuyen-du-lich-chet-choc-outback-c16-15941077973165_60x60.png" alt="movie poster">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieCertificate">P</span>
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieName">Chuyến Du Lịch Chết Chóc - Death -</span>
+                      <p>
+                        <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieLength">100 phút</span> 
+                        - 
+                        <span>TIX 7.7</span>
+                        - 
+                        <span>IMDb 5.7</span>
+                      </p>
+                    </div>
+                  </div>
+                  <p class="theater-matrix__container__showtime-col__target2__movie__note">2D Lồng Tiếng</p>
+                  <div class="theater-matrix__container__showtime-col__target2__movie__showTime">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="theater-matrix__container__showtime-col__target2__movie">
+                  <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail">
+                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/cau-be-nguoi-go-pinocchio-pinocchio-p-15941070116735_60x60.png" alt="movie poster">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieCertificate">P</span>
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieName">Cậu Bé Người Gỗ - Pinocchio -</span>
+                      <p>
+                        <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieLength">100 phút</span> 
+                        - 
+                        <span>TIX 7.7</span>
+                        - 
+                        <span>IMDb 5.7</span>
+                      </p>
+                    </div>
+                  </div>
+                  <p class="theater-matrix__container__showtime-col__target2__movie__note">2D Lồng Tiếng</p>
+                  <div class="theater-matrix__container__showtime-col__target2__movie__showTime">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Beta -->
+              <div class="theater-matrix__container__showtime-col__target2" id="betaLocation1">
+                <div class="theater-matrix__container__showtime-col__target2__movie">
+                  <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail">
+                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/scoob-15940967705047_60x60.png" alt="movie poster">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieCertificate">P</span>
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieName">Cuộc Phiêu Lưu Của Scooby-doo! - Scoob! -</span>
+                      <p>
+                        <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieLength">100 phút</span> 
+                        - 
+                        <span>TIX 7.7</span>
+                        - 
+                        <span>IMDb 5.7</span>
+                      </p>
+                    </div>
+                  </div>
+                  <p class="theater-matrix__container__showtime-col__target2__movie__note">2D Lồng Tiếng</p>
+                  <div class="theater-matrix__container__showtime-col__target2__movie__showTime">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="theater-matrix__container__showtime-col__target2__movie">
+                  <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail">
+                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/ban-dao-peninsula-15935709741597_60x60.png" alt="movie poster">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieCertificate">P</span>
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieName">Bán Đảo - Peninsula -</span>
+                      <p>
+                        <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieLength">100 phút</span> 
+                        - 
+                        <span>TIX 7.7</span>
+                        - 
+                        <span>IMDb 5.7</span>
+                      </p>
+                    </div>
+                  </div>
+                  <p class="theater-matrix__container__showtime-col__target2__movie__note">2D Lồng Tiếng</p>
+                  <div class="theater-matrix__container__showtime-col__target2__movie__showTime">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="theater-matrix__container__showtime-col__target2" id="betaLocation2">
+                <div class="theater-matrix__container__showtime-col__target2__movie">
+                  <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail">
+                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/ban-dao-peninsula-15935709741597_60x60.png" alt="movie poster">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieCertificate">P</span>
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieName">Bán Đảo - Peninsula -</span>
+                      <p>
+                        <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieLength">100 phút</span> 
+                        - 
+                        <span>TIX 7.7</span>
+                        - 
+                        <span>IMDb 5.7</span>
+                      </p>
+                    </div>
+                  </div>
+                  <p class="theater-matrix__container__showtime-col__target2__movie__note">2D Lồng Tiếng</p>
+                  <div class="theater-matrix__container__showtime-col__target2__movie__showTime">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- lotte -->
+              <div class="theater-matrix__container__showtime-col__target2" id="lotteLocation1">
+                <div class="theater-matrix__container__showtime-col__target2__movie">
+                  <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail">
+                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/scoob-15940967705047_60x60.png" alt="movie poster">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieCertificate">P</span>
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieName">Cuộc Phiêu Lưu Của Scooby-doo! - Scoob! -</span>
+                      <p>
+                        <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieLength">100 phút</span> 
+                        - 
+                        <span>TIX 7.7</span>
+                        - 
+                        <span>IMDb 5.7</span>
+                      </p>
+                    </div>
+                  </div>
+                  <p class="theater-matrix__container__showtime-col__target2__movie__note">2D Lồng Tiếng</p>
+                  <div class="theater-matrix__container__showtime-col__target2__movie__showTime">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="theater-matrix__container__showtime-col__target2__movie">
+                  <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail">
+                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/ban-dao-peninsula-15935709741597_60x60.png" alt="movie poster">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieCertificate">P</span>
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieName">Bán Đảo - Peninsula -</span>
+                      <p>
+                        <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieLength">100 phút</span> 
+                        - 
+                        <span>TIX 7.7</span>
+                        - 
+                        <span>IMDb 5.7</span>
+                      </p>
+                    </div>
+                  </div>
+                  <p class="theater-matrix__container__showtime-col__target2__movie__note">2D Lồng Tiếng</p>
+                  <div class="theater-matrix__container__showtime-col__target2__movie__showTime">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="theater-matrix__container__showtime-col__target2" id="lotteLocation2">
+                <div class="theater-matrix__container__showtime-col__target2__movie">
+                  <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail">
+                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/ban-dao-peninsula-15935709741597_60x60.png" alt="movie poster">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieCertificate">P</span>
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieName">Bán Đảo - Peninsula -</span>
+                      <p>
+                        <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieLength">100 phút</span> 
+                        - 
+                        <span>TIX 7.7</span>
+                        - 
+                        <span>IMDb 5.7</span>
+                      </p>
+                    </div>
+                  </div>
+                  <p class="theater-matrix__container__showtime-col__target2__movie__note">2D Lồng Tiếng</p>
+                  <div class="theater-matrix__container__showtime-col__target2__movie__showTime">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="theater-matrix__container__showtime-col__target2" id="lotteLocation3">
+                <div class="theater-matrix__container__showtime-col__target2__movie">
+                  <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail">
+                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/ban-dao-peninsula-15935709741597_60x60.png" alt="movie poster">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieCertificate">P</span>
+                      <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieName">Bán Đảo - Peninsula -</span>
+                      <p>
+                        <span class="theater-matrix__container__showtime-col__target2__movie__movieDetail__title__movieLength">100 phút</span> 
+                        - 
+                        <span>TIX 7.7</span>
+                        - 
+                        <span>IMDb 5.7</span>
+                      </p>
+                    </div>
+                  </div>
+                  <p class="theater-matrix__container__showtime-col__target2__movie__note">2D Lồng Tiếng</p>
+                  <div class="theater-matrix__container__showtime-col__target2__movie__showTime">
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                    <div class="theater-matrix__container__showtime-col__target2__movie__showTime__item">
+                      <span class="theater-matrix__container__showtime-col__target2__movie__showTime__item__start">17:30</span>
+                      <span>~ 19:10</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
 
+      <section class="news">
+        <nav>
+          <div class="news__nav nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="news__nav-item nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Điện Ảnh 24h</a>
+            <a class="news__nav-item nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Review</a>
+            <a class="news__nav-item nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Khuyến Mãi</a>
+          </div>
+        </nav>
+        <div class="news__tab-content tab-content" id="nav-tabContent">
+          <div class="news__tab-pane tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="news__tab-pane__container container">
+              <div class="news__tab-pane__container__row row">
+                <div class="news__tab-pane__container__row__col col-lg-6 col-sm-12">
+                  <div class="news__tab-pane__container__row__col__item article">
+                    <img class="article__img" src="https://s3img.vcdn.vn/123phim/2020/07/kaity-nguyen-tro-thanh-my-nhan-moi-cua-vu-tru-gai-gia-lam-chieu-15959988971479.png" alt="news banner">
+                    <p class="article__title"> consectetur adipisicing elit. Quos nulla ea harum fugit. Ratione minima illum et debitis ab ex.</p>
+                    <p class="article__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ipsam corrupti iste tempora earum totam debitis temporibus veritatis optio aliquam!</p>
+                    <div class="article__footer">
+                      <span class="article__footer__like">
+                        <i class="fa fa-thumbs-up"></i>
+                        <span class="article__footer__like__num">1</span>
+                      </span>
+                      <span class="article__footer__comment">
+                        <i class="far fa-comment-alt"></i>
+                        <span class="article__footer__comment__num">0</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="news__tab-pane__container__row__col col-lg-6 col-sm-12">
+                  <div class="news__tab-pane__container__row__col__item article">
+                    <img class="article__img" src="https://s3img.vcdn.vn/123phim/2020/07/kaity-nguyen-tro-thanh-my-nhan-moi-cua-vu-tru-gai-gia-lam-chieu-15959988971479.png" alt="news banner">
+                    <p class="article__title"> consectetur adipisicing elit. Quos nulla ea harum fugit. Ratione minima illum et debitis ab ex.</p>
+                    <p class="article__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ipsam corrupti iste tempora earum totam debitis temporibus veritatis optio aliquam!</p>
+                    <div class="article__footer">
+                      <span class="article__footer__like">
+                        <i class="fa fa-thumbs-up"></i>
+                        <span class="article__footer__like__num">1</span>
+                      </span>
+                      <span class="article__footer__comment">
+                        <i class="far fa-comment-alt"></i>
+                        <span class="article__footer__comment__num">0</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="news__tab-pane__container__row__col col-lg-4 col-sm-12">
+                  <div class="news__tab-pane__container__row__col__item article">
+                    <img class="article__img" src="https://s3img.vcdn.vn/123phim/2020/07/kaity-nguyen-tro-thanh-my-nhan-moi-cua-vu-tru-gai-gia-lam-chieu-15959988971479.png" alt="news banner">
+                    <p class="article__title"> consectetur adipisicing elit. Quos nulla ea harum fugit. Ratione minima illum et debitis ab ex.</p>
+                    <p class="article__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ipsam corrupti iste tempora earum totam debitis temporibus veritatis optio aliquam!</p>
+                    <div class="article__footer">
+                      <span class="article__footer__like">
+                        <i class="fa fa-thumbs-up"></i>
+                        <span class="article__footer__like__num">1</span>
+                      </span>
+                      <span class="article__footer__comment">
+                        <i class="far fa-comment-alt"></i>
+                        <span class="article__footer__comment__num">0</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="news__tab-pane__container__row__col col-lg-4 col-sm-12"><div class="news__tab-pane__container__row__col__item article">
+                  <img class="article__img" src="https://s3img.vcdn.vn/123phim/2020/07/kaity-nguyen-tro-thanh-my-nhan-moi-cua-vu-tru-gai-gia-lam-chieu-15959988971479.png" alt="news banner">
+                  <p class="article__title"> consectetur adipisicing elit. Ratione minima illum et debitis ab ex.</p>
+                  <p class="article__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ipsam corrupti iste tempora earum totam debitis temporibus veritatis optio aliquam!</p>
+                  <div class="article__footer">
+                    <span class="article__footer__like">
+                      <i class="fa fa-thumbs-up"></i>
+                      <span class="article__footer__like__num">1</span>
+                    </span>
+                    <span class="article__footer__comment">
+                      <i class="far fa-comment-alt"></i>
+                      <span class="article__footer__comment__num">0</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+                <div class="news__tab-pane__container__row__col col-lg-4 col-sm-12">
+                  <div class="articleIntro">
+                    <img src="https://s3img.vcdn.vn/123phim/2020/07/gerard-butler-cung-bo-cu-deadpool-tham-gia-greenland-15937527518432.png" alt="">
+                    <div class="articleIntro__title">Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</div>
+                  </div>
+                  <div class="articleIntro">
+                    <img src="https://s3img.vcdn.vn/123phim/2020/07/gerard-butler-cung-bo-cu-deadpool-tham-gia-greenland-15937527518432.png" alt="">
+                    <div class="articleIntro__title">Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</div>
+                  </div>
+                  <div class="articleIntro">
+                    <img src="https://s3img.vcdn.vn/123phim/2020/07/gerard-butler-cung-bo-cu-deadpool-tham-gia-greenland-15937527518432.png" alt="">
+                    <div class="articleIntro__title">Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</div>
+                  </div>
+                  <div class="articleIntro">
+                    <img src="https://s3img.vcdn.vn/123phim/2020/07/gerard-butler-cung-bo-cu-deadpool-tham-gia-greenland-15937527518432.png" alt="">
+                    <div class="articleIntro__title">Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</div>
+                  </div>
+                </div>
+              </div>
+              <button class="btnSeeMore">XEM THÊM</button>
             </div>
           </div>
-        </section>
+          <div class="news__tab-pane tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <div class="news__tab-pane__container container">
+              <div class="news__tab-pane__container__row row">
+                <div class="news__tab-pane__container__row__col col-lg-6 col-sm-12">
+                  <div class="news__tab-pane__container__row__col__item article">
+                    <img class="article__img" src="https://s3img.vcdn.vn/123phim/2020/06/blackkklansman-coc-nuoc-lanh-de-nguoi-my-thuc-tinh-15910862294165.png" alt="news banner">
+                    <p class="article__title"> consectetur adipisicing elit. Quos nulla ea harum fugit. Ratione minima illum et debitis ab ex.</p>
+                    <p class="article__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ipsam corrupti iste tempora earum totam debitis temporibus veritatis optio aliquam!</p>
+                    <div class="article__footer">
+                      <span class="article__footer__like">
+                        <i class="fa fa-thumbs-up"></i>
+                        <span class="article__footer__like__num">1</span>
+                      </span>
+                      <span class="article__footer__comment">
+                        <i class="far fa-comment-alt"></i>
+                        <span class="article__footer__comment__num">0</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="news__tab-pane__container__row__col col-lg-6 col-sm-12">
+                  <div class="news__tab-pane__container__row__col__item article">
+                    <img class="article__img" src="https://s3img.vcdn.vn/123phim/2020/06/blackkklansman-coc-nuoc-lanh-de-nguoi-my-thuc-tinh-15910862294165.png" alt="news banner">
+                    <p class="article__title"> consectetur adipisicing elit. Quos nulla ea harum fugit. Ratione minima illum et debitis ab ex.</p>
+                    <p class="article__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ipsam corrupti iste tempora earum totam debitis temporibus veritatis optio aliquam!</p>
+                    <div class="article__footer">
+                      <span class="article__footer__like">
+                        <i class="fa fa-thumbs-up"></i>
+                        <span class="article__footer__like__num">1</span>
+                      </span>
+                      <span class="article__footer__comment">
+                        <i class="far fa-comment-alt"></i>
+                        <span class="article__footer__comment__num">0</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="news__tab-pane__container__row__col col-lg-4 col-sm-12">
+                  <div class="news__tab-pane__container__row__col__item article">
+                    <img class="article__img" src="https://s3img.vcdn.vn/123phim/2020/07/kaity-nguyen-tro-thanh-my-nhan-moi-cua-vu-tru-gai-gia-lam-chieu-15959988971479.png" alt="news banner">
+                    <p class="article__title"> consectetur adipisicing elit. Quos nulla ea harum fugit. Ratione minima illum et debitis ab ex.</p>
+                    <p class="article__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ipsam corrupti iste tempora earum totam debitis temporibus veritatis optio aliquam!</p>
+                    <div class="article__footer">
+                      <span class="article__footer__like">
+                        <i class="fa fa-thumbs-up"></i>
+                        <span class="article__footer__like__num">1</span>
+                      </span>
+                      <span class="article__footer__comment">
+                        <i class="far fa-comment-alt"></i>
+                        <span class="article__footer__comment__num">0</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="news__tab-pane__container__row__col col-lg-4 col-sm-12"><div class="news__tab-pane__container__row__col__item article">
+                  <img class="article__img" src="https://s3img.vcdn.vn/123phim/2020/07/kaity-nguyen-tro-thanh-my-nhan-moi-cua-vu-tru-gai-gia-lam-chieu-15959988971479.png" alt="news banner">
+                  <p class="article__title"> consectetur adipisicing elit. Ratione minima illum et debitis ab ex.</p>
+                  <p class="article__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ipsam corrupti iste tempora earum totam debitis temporibus veritatis optio aliquam!</p>
+                  <div class="article__footer">
+                    <span class="article__footer__like">
+                      <i class="fa fa-thumbs-up"></i>
+                      <span class="article__footer__like__num">1</span>
+                    </span>
+                    <span class="article__footer__comment">
+                      <i class="far fa-comment-alt"></i>
+                      <span class="article__footer__comment__num">0</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+                <div class="news__tab-pane__container__row__col col-lg-4 col-sm-12">
+                  <div class="articleIntro">
+                    <img src="https://s3img.vcdn.vn/123phim/2020/07/gerard-butler-cung-bo-cu-deadpool-tham-gia-greenland-15937527518432.png" alt="">
+                    <div class="articleIntro__title">Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</div>
+                  </div>
+                  <div class="articleIntro">
+                    <img src="https://s3img.vcdn.vn/123phim/2020/07/gerard-butler-cung-bo-cu-deadpool-tham-gia-greenland-15937527518432.png" alt="">
+                    <div class="articleIntro__title">Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</div>
+                  </div>
+                  <div class="articleIntro">
+                    <img src="https://s3img.vcdn.vn/123phim/2020/07/gerard-butler-cung-bo-cu-deadpool-tham-gia-greenland-15937527518432.png" alt="">
+                    <div class="articleIntro__title">Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</div>
+                  </div>
+                  <div class="articleIntro">
+                    <img src="https://s3img.vcdn.vn/123phim/2020/07/gerard-butler-cung-bo-cu-deadpool-tham-gia-greenland-15937527518432.png" alt="">
+                    <div class="articleIntro__title">Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</div>
+                  </div>
+                </div>
+              </div>
+              <button class="btnSeeMore">XEM THÊM</button>
+            </div>
+          </div>
+          <div class="news__tab-pane tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <div class="news__tab-pane__container container">
+              <div class="news__tab-pane__container__row row">
+                <div class="news__tab-pane__container__row__col col-lg-6 col-sm-12">
+                  <div class="news__tab-pane__container__row__col__item article">
+                    <img class="article__img" src="https://s3img.vcdn.vn/123phim/2020/06/blackkklansman-coc-nuoc-lanh-de-nguoi-my-thuc-tinh-15910862294165.png" alt="news banner">
+                    <p class="article__title"> consectetur adipisicing elit. Quos nulla ea harum fugit. Ratione minima illum et debitis ab ex.</p>
+                    <p class="article__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ipsam corrupti iste tempora earum totam debitis temporibus veritatis optio aliquam!</p>
+                    <div class="article__footer">
+                      <span class="article__footer__like">
+                        <i class="fa fa-thumbs-up"></i>
+                        <span class="article__footer__like__num">1</span>
+                      </span>
+                      <span class="article__footer__comment">
+                        <i class="far fa-comment-alt"></i>
+                        <span class="article__footer__comment__num">0</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="news__tab-pane__container__row__col col-lg-6 col-sm-12">
+                  <div class="news__tab-pane__container__row__col__item article">
+                    <img class="article__img" src="https://s3img.vcdn.vn/123phim/2020/06/blackkklansman-coc-nuoc-lanh-de-nguoi-my-thuc-tinh-15910862294165.png" alt="news banner">
+                    <p class="article__title"> consectetur adipisicing elit. Quos nulla ea harum fugit. Ratione minima illum et debitis ab ex.</p>
+                    <p class="article__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ipsam corrupti iste tempora earum totam debitis temporibus veritatis optio aliquam!</p>
+                    <div class="article__footer">
+                      <span class="article__footer__like">
+                        <i class="fa fa-thumbs-up"></i>
+                        <span class="article__footer__like__num">1</span>
+                      </span>
+                      <span class="article__footer__comment">
+                        <i class="far fa-comment-alt"></i>
+                        <span class="article__footer__comment__num">0</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="news__tab-pane__container__row__col col-lg-4 col-sm-12">
+                  <div class="news__tab-pane__container__row__col__item article">
+                    <img class="article__img" src="https://s3img.vcdn.vn/123phim/2020/07/kaity-nguyen-tro-thanh-my-nhan-moi-cua-vu-tru-gai-gia-lam-chieu-15959988971479.png" alt="news banner">
+                    <p class="article__title"> consectetur adipisicing elit. Quos nulla ea harum fugit. Ratione minima illum et debitis ab ex.</p>
+                    <p class="article__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ipsam corrupti iste tempora earum totam debitis temporibus veritatis optio aliquam!</p>
+                    <div class="article__footer">
+                      <span class="article__footer__like">
+                        <i class="fa fa-thumbs-up"></i>
+                        <span class="article__footer__like__num">1</span>
+                      </span>
+                      <span class="article__footer__comment">
+                        <i class="far fa-comment-alt"></i>
+                        <span class="article__footer__comment__num">0</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="news__tab-pane__container__row__col col-lg-4 col-sm-12"><div class="news__tab-pane__container__row__col__item article">
+                  <img class="article__img" src="https://s3img.vcdn.vn/123phim/2020/07/kaity-nguyen-tro-thanh-my-nhan-moi-cua-vu-tru-gai-gia-lam-chieu-15959988971479.png" alt="news banner">
+                  <p class="article__title"> consectetur adipisicing elit. Ratione minima illum et debitis ab ex.</p>
+                  <p class="article__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ipsam corrupti iste tempora earum totam debitis temporibus veritatis optio aliquam!</p>
+                  <div class="article__footer">
+                    <span class="article__footer__like">
+                      <i class="fa fa-thumbs-up"></i>
+                      <span class="article__footer__like__num">1</span>
+                    </span>
+                    <span class="article__footer__comment">
+                      <i class="far fa-comment-alt"></i>
+                      <span class="article__footer__comment__num">0</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+                <div class="news__tab-pane__container__row__col col-lg-4 col-sm-12">
+                  <div class="articleIntro">
+                    <img src="https://s3img.vcdn.vn/123phim/2020/07/gerard-butler-cung-bo-cu-deadpool-tham-gia-greenland-15937527518432.png" alt="">
+                    <div class="articleIntro__title">Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</div>
+                  </div>
+                  <div class="articleIntro">
+                    <img src="https://s3img.vcdn.vn/123phim/2020/07/gerard-butler-cung-bo-cu-deadpool-tham-gia-greenland-15937527518432.png" alt="">
+                    <div class="articleIntro__title">Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</div>
+                  </div>
+                  <div class="articleIntro">
+                    <img src="https://s3img.vcdn.vn/123phim/2020/07/gerard-butler-cung-bo-cu-deadpool-tham-gia-greenland-15937527518432.png" alt="">
+                    <div class="articleIntro__title">Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</div>
+                  </div>
+                  <div class="articleIntro">
+                    <img src="https://s3img.vcdn.vn/123phim/2020/07/gerard-butler-cung-bo-cu-deadpool-tham-gia-greenland-15937527518432.png" alt="">
+                    <div class="articleIntro__title">Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</div>
+                  </div>
+                </div>
+              </div>
+              <button class="btnSeeMore">XEM THÊM</button>
+            </div>
+          </div>
+        </div>
+       </section>
+
+      <div class="mobileApp bg-primary">
+        <div class="mobileApp__overlayBg"></div>
+        <div class="mobileApp__container container">
+         <div class="mobileApp__container__row row">
+           <div class="mobileApp__container__row__col col-sm-12 col-lg-6">
+             <h1>Ứng dụng tiện lợi dành cho người yêu điện ảnh</h1>
+             <p>Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp và đổi quà hấp dẫn.</p>
+             <button class="mobileApp__container__row__col__btn btnRed">App miễn phí - Tải về ngay</button>
+             <p>TIX có hai phiên bản 
+               <a href="#">iOS</a> & <a href="#">Android</a>
+             </p>
+           </div>
+           <div class="mobileApp__container__row__col col-sm-12 col-lg-6">
+             <div class="mobileApp__container__row__col__phoneApp" id= "phoneApp">
+               <img class="mobileApp__container__row__col__phoneApp__phoneframe"  id="phoneframe" src="./images/icon/iphone frame.png" alt="">
+               <div class="mobileApp__container__row__col__phoneApp__slider row" id="phoneAppSlider">
+                 <img src="https://tix.vn/app/assets/img/icons/slide/slide7.jpg" alt="">
+                 <img src="https://tix.vn/app/assets/img/icons/slide/slide11.jpg" alt="">
+                 <img src="https://tix.vn/app/assets/img/icons/slide/slide15.jpg" alt="">
+                 <img src="https://tix.vn/app/assets/img/icons/slide/slide1.jpg" alt="">
+                 <img src="https://tix.vn/app/assets/img/icons/slide/slide4.jpg" alt="">
+                 <img src="https://tix.vn/app/assets/img/icons/slide/slide8.jpg" alt="">
+                 <img src="https://tix.vn/app/assets/img/icons/slide/slide14.jpg" alt="">
+                 <img src="https://tix.vn/app/assets/img/icons/slide/slide5.jpg" alt="">
+               </div>
+             </div>
+           </div>
+         </div>
+        </div>
       </div>
 
       <footer class="footer">
@@ -329,64 +1948,64 @@
               <h3>ĐỐI TÁC</h3>
               <div class="corporators">
                 <div class="corporator">
-                  <img src="./images/corp1.png" alt="corp1">
+                  <img src="../images/header-footer/corp1.png" alt="corp1">
                 </div>
                 <div class="corporator">
-                  <img src="./images/corp2.png" alt="corp2">
+                  <img src="../images/header-footer/corp2.png" alt="corp2">
                 </div>
                 <div class="corporator">
-                  <img src="./images/corp3.png" alt="corp3">
+                  <img src="../images/header-footer/corp3.png" alt="corp3">
                 </div>
                 <div class="corporator">
-                  <img src="./images/corp4.png" alt="corp4">
+                  <img src="../images/header-footer/corp4.png" alt="corp4">
                 </div>
                 <div class="corporator">
-                  <img src="./images/corp5.png" alt="corp5">
+                  <img src="../images/header-footer/corp5.png" alt="corp5">
                 </div>
                 <div class="corporator">
-                  <img src="./images/corp6.png" alt="corp6">
+                  <img src="../images/header-footer/corp6.png" alt="corp6">
                 </div>
                 <div class="corporator">
-                  <img src="./images/corp7.jpg" alt="corp7">
+                  <img src="../images/header-footer/corp7.jpg" alt="corp7">
                 </div>
                 <div class="corporator">
-                  <img src="./images/corp8.png" alt="corp8">
+                  <img src="../images/header-footer/corp8.png" alt="corp8">
                 </div>
                 <div class="corporator">
-                  <img src="./images/corp9.png" alt="corp9">
+                  <img src="../images/header-footer/corp9.png" alt="corp9">
                 </div>
                 <div class="corporator">
-                  <img src="./images/corp10.png" alt="corp10">
+                  <img src="../images/header-footer/corp10.jpg" alt="corp10">
                 </div>
                 <div class="corporator">
-                  <img src="./images/corp11.png" alt="corp11">
+                  <img src="../images/header-footer/corp11.png" alt="corp11">
                 </div>
                 <div class="corporator">
-                  <img src="./images/corp12.png" alt="corp12">
+                  <img src="../images/header-footer/corp12.png" alt="corp12">
                 </div>
                 <div class="corporator">
-                  <img src="./images/corp13.png" alt="corp13">
+                  <img src="../images/header-footer/corp13.png" alt="corp13">
                 </div>
                 <div class="corporator">
-                  <img src="./images/corp14.png" alt="corp14">
+                  <img src="../images/header-footer/corp14.jpg" alt="corp14">
                 </div>
                 <div class="corporator">
-                  <img src="./images/corp15.png" alt="corp15">
+                  <img src="../images/header-footer/corp15.png" alt="corp15">
                 </div>
                 <div class="corporator">
-                  <img src="./images/corp16.png" alt="corp16">
+                  <img src="../images/header-footer/corp16.png" alt="corp16">
                 </div>
                 <div class="corporator">
-                  <img src="./images/corp17.png" alt="corp17">
+                  <img src="../images/header-footer/corp17.png" alt="corp17">
                 </div>
                 <div class="corporator">
-                  <img src="./images/corp18.png" alt="corp18">
+                  <img src="../images/header-footer/corp18.png" alt="corp18">
                 </div>
                 <div class="corporator">
-                  <img src="./images/corp19.png" alt="corp19">
+                  <img src="../images/header-footer/corp19.png" alt="corp19">
                 </div>
                 <div class="corporator">
-                  <img src="./images/corp20.png" alt="corp20">
+                  <img src="../images/header-footer/corp20.png" alt="corp20">
                 </div>
               </div>  
             </div>
@@ -400,13 +2019,13 @@
             <div class="footer__top__social">
               <h3>SOCIAL</h3>
               <i class="fab fa-facebook"></i>
-              <img src="./images/zalo-icon.png" alt="zalo-icon">
+              <img src="../images/header-footer/zalo-icon.png" alt="zalo-icon">
             </div>
           </div>
           
           <div class="footer__bottom d-flex">
             <div class="footer__bottom__zion-logo">
-              <img src="./images/zion-logo.jpg" alt="zion-logo">
+              <img src="../images/header-footer/zion-logo.jpg" alt="zion-logo">
             </div>
             <div class="footer__bottom__content flex-grow-1">
               <p>TIX – SẢN PHẨM CỦA CÔNG TY CỔ PHẦN ZION</p>
@@ -419,17 +2038,21 @@
             </p>
             </div>
             <div class="footer__bottom__certificate">
-              <img src="./images/certificate.png" alt="certificate">
+              <img src="../images/header-footer/certificate.png" alt="certificate">
             </div>
           </div>
       </footer>
 
-    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./js/index.js"></script>
+
+    <!-- models -->
+    <script src="./js/models/movie.js"></script>
+      
+    <!-- controlllers -->
+    <script type="module" defer src="./js/controllers/index.js"></script>
   </body>
 </html>

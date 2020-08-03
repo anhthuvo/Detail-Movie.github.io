@@ -1,0 +1,19 @@
+// common files
+@import "../helper/mixin";
+@import "../helper/theme";
+@import "../base/base.scss";
+
+@import "../components/header";
+
+.body {
+  background-color: $darkGreen;
+  margin-top: 60px;
+  & > img {
+    width: 100%;
+    @include position(absolute, 60px, 0, 0);
+  }
+}
+
+@import "../components/DetailMovie__carousel";
+@import "../components/DetailMovie__info-review";
+@import "../components/footer";

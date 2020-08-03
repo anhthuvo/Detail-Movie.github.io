@@ -1,0 +1,19 @@
+// common files
+@import "../helper/mixin";
+@import "../helper/theme";
+@import "../base/base.scss";
+
+@import "../layout/header";
+@import "../layout/index__carousel";
+@import "../layout/index__booking";
+@import "../layout/index__movie-slider";
+@import "../layout/index__modal";
+@import "../layout/index__theater-matrix";
+@import "../layout/index__news";
+@import "../layout/index__mobileApp";
+@import "../layout/footer";
+
+//components
+@import "../components/tab-pane";
+@import "../components/btn";
+@import "../components/article";

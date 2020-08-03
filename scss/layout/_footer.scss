@@ -1,0 +1,202 @@
+.footer {
+    background-color: $dark;
+    padding: 20px 0;
+  
+    .container {
+      .footer__top {
+        border-bottom: 1px solid $grey;
+  
+        .footer__top__tix,
+        .footer__top__corporators,
+        .footer__top__mobileApp,
+        .footer__top__social {
+          h3 {
+            @include Text($txtWhite, $h8, $fwRegular);
+            margin-bottom: 10px;
+          }
+  
+          padding: 20px;
+        }
+  
+        .footer__top__tix {
+          flex-grow: 1;
+  
+          .row {
+            margin-right: 0;
+            margin-left: 0;
+            justify-content: space-between;
+          }
+          ul {
+            li {
+              @include Text($txtGrey1, $h8, $fwBold);
+              list-style-type: none;
+              cursor: pointer;
+              &:hover {
+                color: $txtWhite;
+              }
+            }
+          }
+        }
+  
+        .footer__top__corporators {
+          flex-grow: 2;
+  
+          .corporators {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            width: 225px;
+            height: 185px;
+  
+            .corporator {
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+              overflow: hidden;
+              background-color: $white;
+              cursor: pointer;
+    
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+  
+        .footer__top__mobileApp {
+          flex-grow: 1;
+          text-align: center;
+  
+          i {
+            font-size: 25px;
+            color: $grey;
+            margin-right: 10px;
+            cursor: pointer;
+          }
+        }
+  
+        .footer__top__social {
+          flex-grow: 1;
+          color: $grey;
+          text-align: center;
+          
+          i {
+            font-size: 25px;
+            margin-right: 10px;
+            cursor: pointer;
+          }
+  
+          img {
+            height: 25px;
+            width: 25px;
+            margin-top: -10px;
+            display: inline-block;
+            cursor: pointer;
+          }
+        }
+      }
+  
+      .footer__bottom {
+        padding-top: 20px;
+  
+        .footer__bottom__zion-logo {
+          width: 80px;
+          img {
+            border-radius: 8px;
+            width: 100%;
+            margin-bottom: 20px;
+          }
+        }
+  
+        .footer__bottom__content {
+          padding-left: 20px;
+          padding-right: 20px;
+          margin-right: auto;
+          flex-grow: 1;
+          p:nth-child(1) {
+            @include Text($txtWhite, $h8, $fwRegular);
+            text-transform: uppercase;
+            margin-bottom: 0;
+          }
+  
+          p:nth-child(2) {
+            @include Text($txtGrey1, $h8, $fwRegular);
+            margin-bottom: 0;
+          }
+  
+          a {
+            color: $txtRed;
+            text-decoration: none;
+          }
+        }
+  
+        .footer__bottom__certificate {
+          width: 130px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  
+    @media (max-width: 991.98px) {
+      .container {
+        .footer__top {
+          h3 {
+            display: none;
+          }
+  
+          .footer__top__tix {
+            width: 20px;
+  
+            ul:nth-child(1) {
+              display: none;
+            }
+  
+            li {
+              display: inline-block;
+              padding-right: 10px;
+            }
+          }
+  
+          .footer__top__social {
+            text-align: left;
+          }
+  
+          .footer__top__corporators,
+          .footer__top__mobileApp {
+            display: none;
+          }       
+        }
+  
+        .footer__bottom {
+          .footer__bottom__content {
+            text-align: center;
+          }
+        }
+      }
+    }
+  
+    @media (max-width: 767.98px) {
+      .container {
+        .footer__top {
+          @include flex(column, center, center);
+  
+          .footer__top__tix {
+            padding: 0px;
+            width: 100%;
+            justify-content: center;
+  
+            ul:nth-child(2) {
+              margin: auto;
+            }
+          }
+        }
+  
+        .footer__bottom {
+          @include flex(column, center, center);
+          // .footer__bottom__content {
+          // }
+        }
+      }
+    }
+  }

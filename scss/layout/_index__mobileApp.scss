@@ -1,0 +1,72 @@
+.mobileApp {
+    padding: 120px 0 80px 0;
+    background-image: url('https://cbeditz.com/wp-content/uploads/2019/04/cb-edit-background-e1560089733447.jpg');
+    position: relative;
+
+    &__overlayBg {
+        @include overlay(0);
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    &__container {
+        &__row {
+            &__col {
+                h1 {
+                    @include Text($txtWhite, 35px, $fwRegular);
+                }
+
+                p {
+                    @include Text($txtWhite, $h5, $fwRegular);
+                    margin: 20px 0;
+                }
+
+                a{
+                    @include Text($txtWhite, $h5, $fwRegular);
+                    text-decoration: underline;
+                }
+
+                &__phoneApp {
+                    margin: auto;
+                    position: relative;
+                    height: 460px;
+                    width: 225px;
+                    border-radius: 37px;
+                    overflow: hidden;
+                    background-color: $white;
+
+                    &__btn {
+                        width: 300px;
+                    }
+    
+                    &__phoneframe {
+                        @include position(relative, 0px, -1.2px, 1);
+                        height: 460px;
+                        width: 230px;
+                    }
+    
+                    &__slider {
+                        @include position(absolute, 14px, 15px, 0);
+                        display: flex;
+                        flex-wrap: nowrap;
+    
+                        img {
+                            margin: 0 13.5px;
+                            width: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 991.98px) {
+        &__container {
+            &__row {
+                &__col {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+

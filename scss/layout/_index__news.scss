@@ -1,0 +1,8 @@
+.news {
+    padding: 130px 0 50px 0;
+    background-image: radial-gradient(800px circle at 50% 0%, $light, $white, $white);
+
+    .news__tab-pane__container__row__col__item {
+        margin-bottom: 20px;
+    }
+}

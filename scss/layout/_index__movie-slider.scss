@@ -1,0 +1,160 @@
+.movie-slider {
+  background-color: transparent;
+
+  &__tab-pane {
+    position: relative;
+
+    &__control-prev,
+    &__control-next {
+      width: 30px;
+      cursor: pointer;
+      margin: 0 20px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__control-next {
+      right: 0;
+    }
+
+    &__container {
+      overflow-x: hidden;
+
+      &__list {
+        display: flex;
+        flex-flow: column wrap;
+        max-height: 1000px;
+        position: relative;
+        right: 0%;
+
+        &__item {
+
+          &:hover .movie-slider__tab-pane__container__list__item__poster__overlay {
+            opacity: 1;
+            transition: all 0.5s;
+          }
+
+          &:hover .movie-slider__tab-pane__container__list__item__footer__bookingBtn {
+            display: block;
+          }
+
+          &:hover .movie-slider__tab-pane__container__list__item__footer__detail {
+            display: none;
+          }
+
+          &__poster {
+            position: relative;
+
+            &__overlay {
+              @include overlay(10);
+              background-image: linear-gradient(to top, $black 0%, transparent);
+              opacity: 0;
+
+              &__playTrailer {
+                cursor: pointer;
+                @include btn($dark70, 50%, 2px solid $white, 0);
+                height: 80px;
+                width: 80px;
+                text-align: center;
+                @include positionCenter();
+
+                i {
+                  color: $white;
+                  font-size: 30px;
+                  line-height: 76px;
+                }
+              }
+            }
+
+            &__img {
+              width: 100%;
+              border-radius: 3px;
+            }
+
+            &__rating {
+              background-color: $dark70;
+              border-radius: 5px;
+              padding: 5px 10px;
+              @include position(absolute, 10px, calc(100% - 65px), 10);
+              text-align: center;
+              &__score {
+                @include Text($txtWhite, $h5, $fwMedium);
+                line-height: 1rem;
+              }
+
+              &__stars {
+                line-height: 1rem;
+                i {
+                  font-size: 9px;
+                  color: $red;
+                  margin-right: -5px;
+                }
+                img {
+                  width: 9px;
+                  height: 9px;
+                  margin-left: 2px;
+                }
+              }
+            }
+          }
+
+          &__footer {
+            height: 90px;
+
+            &__detail {
+              margin-top: 10px;
+
+              &__movieCertificate {
+                @include Text($txtWhite, $h6, $fwRegular);
+                @include btn($red, 3px, 0, 0 5px);
+              }
+
+              &__movieName {
+                @include Text($txtDark, $h4, $fwRegular);
+              }
+
+              &__movieLength {
+                margin-top: 5px;
+                @include Text($txtGrey1, $h6, $fwMedium);
+              }
+            }
+
+            &__bookingBtn {
+              width: 100%;
+              margin-top: 10px;
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    &__tab-pane {
+      position: relative;
+  
+      &__control-prev,
+      &__control-next {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 420.98px) {
+    &__tab-pane {
+      position: relative;
+
+      &__container {
+        &__list {
+          max-height: 800px;
+        }
+      }
+    }
+  }
+}

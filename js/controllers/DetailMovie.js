@@ -1,22 +1,11 @@
+import { activeDropdownItem, navbarCollapse } from './modules/header.js';
+
 $(document).ready(function () {
-  // choose location in navbar
-  $(".dropdown-item").click(function () {
-    $(".dropdown-item").removeClass("active");
-    $(this).addClass("active");
-    $(".btn.dropdown-toggle").html($(this).html());
-  });
 
-  //click menuBtn show and hide the navbar
-  $(".navbar__menuBtn").click(function () {
-    $(".navbar-list").css("left", "30%");
-    $("#navbar-list-bg").fadeIn();
-  });
-
-  $(".navbar-list__signIn__closeBtn, .navbar-list-bg").click(function () {
-    $(".navbar-list").css("left", "100%");
-    $("#navbar-list-bg").fadeOut();
-  });
-  // end
+  // header section
+  activeDropdownItem(".header");
+  navbarCollapse();
+  //end eader
 
   // playBtn trailer
   $(".carousel__playBtn").click(function () {
